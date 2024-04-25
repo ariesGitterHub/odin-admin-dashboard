@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+--base-white: #ebdfd0;
+--sunny: #f8c296;
+--sunset: #f18c8c;
+--mauve: #C06C84;
+--dusk: #6C5B7B;
+--smoke: #355C7D;
+--bg-blue: #1C274C;
+
+--base-padding: 5px;
+--base-margin: 5px;
+--base-radius: 15px;
+}
+
+* {
+    font-family: "Righteous", Verdana, Tahoma, sans-serif;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 328px;
+     background: var(--bg-blue);
+}
+
+grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    grid-template-areas: 
+    "header     header"
+    "sidebar    navbar"
+    "sidebar    main-content"
+    "footer     footer";
+    gap: 20px
+}
+
+/* HEADER */
+
+header {
+    background: var(--sunny);
+    padding: calc(var(--base-padding) * 2);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    grid-area: header;
+}
+
+logo-text-container {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+}
+
+search-bar-container {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+}
+
+header img {
+    height: 70px;
+}
+
+header logo-text-container h1 {
+    color: var(--bg-blue);
+    font-size: 1.75rem;
+    padding: var(--base-padding)
+}
+
+header input {
+    width: 14.6ch;
+    background: var(--base-white);
+    border: 5px double var(--bg-blue) ;
+    border-radius: 12px;
+    color: var(--bg-blue);
+    outline: none;
+    text-indent: 3px;
+}
+
+header input:focus {
+    background: var(--sunset);
+    border: 5px double var(--bg-blue) ;
+}
+
+header button {
+
+    background: var(--bg-blue);
+    border: 5px solid var(--sunny) ;
+    border-radius: 12px;
+    color: var(--base-white);
+
+    outline: none;
+    padding: 4px;
+    text-align: center;
+}
+
+header button:active {
+    background: var(--sunset);
+    border: 5px solid var(--bg-blue);
+    color: var(--bg-blue);
+    /* transform: scale(.95); */
+}
+
+
+/* SIDEBAR */
+
+sidebar {
+    background: var(--sunset);
+    border-top-right-radius: var(--base-radius);
+    border-bottom-right-radius: var(--base-radius);
+    grid-area: sidebar;
+    padding: calc(var(--base-padding) * 2);
+    display: grid;
+}
+
+.sidebar-btns {
+    width: 13rem;
+    background: var(--sunset);
+    border: none;
+    color: var(--bg-blue);
+    cursor: pointer;
+    display: flex;
+        align-items: center;
+    padding: calc(var(--base-padding) * 2);
+}
+
+.sidebar-btns:hover {
+    background: var(--smoke);
+    /* border: 1px dotted var(--bg-blue);  */
+    border-radius: var(--base-radius);
+    color: var(--sunset);
+
+
+}
+.sidebar-btns img{
+    height: 38px;
+    padding-right: 10px
+}
+/* NAVBAR */
+
+navbar {
+    background: var(--mauve);
+    border-top-left-radius: var(--base-radius);
+    border-bottom-left-radius: var(--base-radius);
+    grid-area: navbar;
+}
+
+/* MAIN-CONTENT */
+
+main-content {
+    background: var(--dusk);
+    border-top-left-radius: var(--base-radius);
+    border-bottom-left-radius: var(--base-radius);
+    grid-area: main-content;
+    padding: calc(var(--base-padding) * 2);
+
+    display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+}
+
+card {
+    /* height: fit-content; */
+    /* width: fit-content; */
+    background: var(--sunny);
+    border-radius: var(--base-radius);
+    display: grid;
+    margin: calc(var(--base-margin) * 2);
+    padding: calc(var(--base-padding) * 2);
+}
+
+card a {
+    text-decoration: none;
+}
+
+card a:link, card a:visited {
+    color: var(--bg-blue);
+
+}
+
+card a:hover {
+    color: var(--smoke);
+}
+
+/* card a:active {
+    color: var(--sunset);
+} */
+
+card p {
+    color: var(--smoke);
+    font-size: 1rem;
+}
+card img {
+    height:30px;    
+}
+
+card-images {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    height: 1rem;
+    /* background: var(--smoke); */
+    color: var(--sunny);
+    grid-area: footer;
+    padding: calc(var(--base-padding));
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+footer p {
+    font-size: .875rem;
+}
