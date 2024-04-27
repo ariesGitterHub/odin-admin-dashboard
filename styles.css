@@ -27,17 +27,12 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 h2 {
     font-size: 1.5rem;
 }
-
-h3 {
-    font-size: 1.2rem;
-}
-
 
 grid-container {
     display: grid;
@@ -57,11 +52,13 @@ header {
  
     background: var(--sunny);
     padding: calc(var(--base-padding) * 2);
-    display: grid;
-grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-    align-items: center;
-
+    display: flex;
+    flex-direction: column;
+/* grid-template-columns: repeat(auto-fill, minmax(375px, 1fr)); */
+    align-items: start;
+justify-content: center;
     gap: 10px;
+
     grid-area: header;
 }
 
@@ -80,11 +77,11 @@ search-bar-container {
 
 form {
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 
 header img {
-    height: 70px;
+    height: 80px;
 }
 
 header logo-text-container h1 {
@@ -93,7 +90,7 @@ header logo-text-container h1 {
 }
 
 header input {
-    width: 16.5ch;
+    width: 18.5ch;
     background: var(--base-white);
     border: 5px double var(--bg-blue) ;
     border-radius: 12px;
@@ -172,8 +169,14 @@ card {
 }
 
 card a {
+    font-size: 1rem;
     text-decoration: none;
 }
+
+card h3 a {
+    font-size: 1.2rem;
+}
+
 
 card a:link, card a:visited {
     color: var(--bg-blue);
@@ -190,6 +193,11 @@ card a:hover {
 
 card p {
     color: var(--smoke);
+    font-size: 1rem;
+
+}
+
+card em {
     font-size: 1rem;
 }
 card img {
@@ -221,7 +229,7 @@ footer {
 }
 
 footer p {
-    font-size: .875rem;
+    font-size: 1rem;
 }
 
 
@@ -244,13 +252,13 @@ button:hover {
 }
 
 button img{
-    height: 38px;
+    height: 50px;
     padding-right: 10px;
 }
 
 button:active {
     background: var(--mauve);
-    border: 5px solid var(--bg-blue);
+    border: 5px solid var(--sunny);
     /* color: var(--bg-blue); */
 }
 
@@ -286,3 +294,58 @@ main-content button {
     background: var(--dusk);
         border: 5px solid var(--dusk);
 }
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 900px) {
+
+.toggle-text {
+    display: none;
+  }
+
+sidebar button {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: var(--base-padding);
+}
+
+sidebar img {
+    height: 2.5rem;
+    padding: 0;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+h1 {
+    font-size: 2rem;
+}
+
+header {
+    align-items: center;
+    justify-content: center;
+        padding: calc(var(--base-padding) * 1);
+}
+
+header img {
+    height: 50px;
+}
+
+header input {
+    width: 15ch;
+
+}
+
+sidebar img {
+    height: 2rem;
+    padding: 0;
+}
+
+}
+
+
+
