@@ -26,10 +26,23 @@ body {
      background: var(--bg-blue);
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+
 grid-container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 1fr 4fr 1fr;
+    grid-template-columns: .25fr 5fr;
+    grid-template-rows: .25fr 2fr 4fr .25fr;
     grid-template-areas: 
     "header     header"
     "sidebar    navbar"
@@ -41,12 +54,14 @@ grid-container {
 /* HEADER */
 
 header {
+ 
     background: var(--sunny);
     padding: calc(var(--base-padding) * 2);
-    display: flex;
+    display: grid;
+grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     align-items: center;
-    flex-wrap: wrap;
-    gap: 18px;
+
+    gap: 10px;
     grid-area: header;
 }
 
@@ -58,8 +73,14 @@ logo-text-container {
 
 search-bar-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-self: end;
+    justify-self: start;
+}
+
+form {
+    display: flex;
+    gap: 5px;
 }
 
 header img {
@@ -68,12 +89,11 @@ header img {
 
 header logo-text-container h1 {
     color: var(--bg-blue);
-    font-size: 1.75rem;
     padding: var(--base-padding)
 }
 
 header input {
-    width: 14.6ch;
+    width: 16.5ch;
     background: var(--base-white);
     border: 5px double var(--bg-blue) ;
     border-radius: 12px;
@@ -82,35 +102,28 @@ header input {
     text-indent: 3px;
 }
 
-header input:focus {
-    background: var(--sunset);
-    border: 5px double var(--bg-blue) ;
-}
-
-header button {
-
-    background: var(--bg-blue);
-    border: 5px solid var(--sunny) ;
-    border-radius: 12px;
-    color: var(--base-white);
-
-    outline: none;
-    padding: 4px;
-    text-align: center;
-}
-
-header button:active {
-    background: var(--sunset);
-    border: 5px solid var(--bg-blue);
+header input:focus{
+    background: var(--mauve);
+    border: 5px double var(--bg-blue);
     color: var(--bg-blue);
-    /* transform: scale(.95); */
 }
+
+::placeholder {
+  color: var(--bg-blue);
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: var(--bg-blue);
+}
+
+
 
 
 /* SIDEBAR */
 
 sidebar {
-    background: var(--sunset);
+    background: var(--smoke);
     border-top-right-radius: var(--base-radius);
     border-bottom-right-radius: var(--base-radius);
     grid-area: sidebar;
@@ -118,33 +131,11 @@ sidebar {
     display: grid;
 }
 
-.sidebar-btns {
-    width: 13rem;
-    background: var(--sunset);
-    border: none;
-    color: var(--bg-blue);
-    cursor: pointer;
-    display: flex;
-        align-items: center;
-    padding: calc(var(--base-padding) * 2);
-}
 
-.sidebar-btns:hover {
-    background: var(--smoke);
-    /* border: 1px dotted var(--bg-blue);  */
-    border-radius: var(--base-radius);
-    color: var(--sunset);
-
-
-}
-.sidebar-btns img{
-    height: 38px;
-    padding-right: 10px
-}
 /* NAVBAR */
 
 navbar {
-    background: var(--mauve);
+    background: var(--sunset);
     border-top-left-radius: var(--base-radius);
     border-bottom-left-radius: var(--base-radius);
     grid-area: navbar;
@@ -154,13 +145,20 @@ navbar {
 
 main-content {
     background: var(--dusk);
+    /* border-bottom: 10px solid var(--base-white);
+    border-left: 10px solid var(--base-white);
+    border-top: 10px solid var(--base-white); */
     border-top-left-radius: var(--base-radius);
     border-bottom-left-radius: var(--base-radius);
     grid-area: main-content;
     padding: calc(var(--base-padding) * 2);
 
     display: grid;
-grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+main-content h2 {
+    color: var(--sunny);
 }
 
 card {
@@ -204,12 +202,17 @@ card-images {
     gap: 10px;
 }
 
+.special-card {
+        background: var(--dusk);
+        border: 11px dashed var(--sunny);
+}
+
 /* FOOTER */
 
 footer {
     height: 1rem;
-    /* background: var(--smoke); */
-    color: var(--sunny);
+    background: var(--sunny);
+    color: var(--bg-blue);
     grid-area: footer;
     padding: calc(var(--base-padding));
     display: flex;
@@ -219,4 +222,67 @@ footer {
 
 footer p {
     font-size: .875rem;
+}
+
+
+/* BUTTONS */
+button {
+    width: 18rem;
+    background: var(--smoke);
+    border: 5px solid var(--smoke);
+    color: var(--sunny);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: calc(var(--base-padding) * 2);
+}
+
+button:hover {
+    background: var(--bg-blue);
+    border: 5px solid var(--bg-blue);
+    border-radius: var(--base-radius);
+}
+
+button img{
+    height: 38px;
+    padding-right: 10px;
+}
+
+button:active {
+    background: var(--mauve);
+    border: 5px solid var(--bg-blue);
+    /* color: var(--bg-blue); */
+}
+
+header button {
+    width:fit-content;
+    background: var(--bg-blue);
+    border: 5px solid var(--bg-blue) ;
+    border-radius: 12px;
+    color: var(-sunny);
+    outline: none;
+    padding: 5px;
+    /* text-align: center; */
+}
+
+header button:hover {
+    border: 5px double var(--sunny) ;
+    border-radius: 12px;
+    color: var(-sunny);
+    outline: none;
+    padding: 5px;
+    text-align: center;
+}
+
+header button:active {
+    /* background: var(--mauve); */
+    /* border: 5px solid var(--bg-blue); */
+    /* color: var(--bg-blue); */
+    /* transform: scale(.95); */
+}
+
+main-content button {
+    width: auto;
+    background: var(--dusk);
+        border: 5px solid var(--dusk);
 }

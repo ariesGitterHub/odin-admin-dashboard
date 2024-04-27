@@ -1,6 +1,6 @@
 # odin-admin-dashboard
 
-Assignment
+ASSIGNMENT
 Step 1: Set up and planning
 Set up your Git repository (refer to past projects if you need a refresher).
 
@@ -43,3 +43,7 @@ Don’t forget to push your finished dashboard to GitHub. Use GitHub Pages to pu
 
 Step 6: Section feedback
 Before you move on, we would love it if you could submit your feedback on the Intermediate HTML and CSS course.
+
+ATTRIBUTIONS
+
+[Solar Bold Icons Collection](https://www.svgrepo.com/collection/solar-bold-icons/)
