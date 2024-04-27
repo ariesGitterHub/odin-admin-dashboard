@@ -3,6 +3,7 @@
 :root {
 --base-white: #ebdfd0;
 --sunny: #f8c296;
+
 --sunset: #f18c8c;
 --mauve: #C06C84;
 --dusk: #6C5B7B;
@@ -36,8 +37,8 @@ h2 {
 
 grid-container {
     display: grid;
-    grid-template-columns: .25fr 5fr;
-    grid-template-rows: .25fr 2fr 4fr .25fr;
+    grid-template-columns: .15fr 5fr;
+    grid-template-rows: .25fr 1fr 4fr .25fr;
     grid-template-areas: 
     "header     header"
     "sidebar    navbar"
@@ -107,7 +108,7 @@ header input:focus{
 
 ::placeholder {
   color: var(--bg-blue);
-  opacity: 1; /* Firefox */
+  /* opacity: 1; Firefox */
 }
 
 ::-ms-input-placeholder { /* Edge 12 -18 */
@@ -136,6 +137,27 @@ navbar {
     border-top-left-radius: var(--base-radius);
     border-bottom-left-radius: var(--base-radius);
     grid-area: navbar;
+    padding: calc(var(--base-padding) * 2);
+}
+
+profile-container {
+    width: min-content;
+    background: var(--mauve);
+    border: 5px solid var(--mauve);
+    border-radius: var(--base-radius);
+    color: var(--bg-blue);
+    display: flex;
+    align-items: center;
+    
+}
+
+profile-container h2 {
+    padding: calc(var(--base-padding) * 2)
+}
+
+profile-container img {
+    height: 4rem;
+
 }
 
 /* MAIN-CONTENT */
@@ -185,6 +207,7 @@ card a:link, card a:visited {
 
 card a:hover {
     color: var(--smoke);
+        text-decoration: underline;
 }
 
 /* card a:active {
@@ -192,7 +215,7 @@ card a:hover {
 } */
 
 card p {
-    color: var(--smoke);
+    color: var(--bg-blue);
     font-size: 1rem;
 
 }
@@ -322,27 +345,37 @@ sidebar img {
 @media only screen and (max-width: 600px) {
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
 header {
     align-items: center;
     justify-content: center;
-        padding: calc(var(--base-padding) * 1);
+    padding: 0;
+
 }
 
 header img {
-    height: 50px;
+    height: 60px;
 }
 
 header input {
-    width: 15ch;
+    width: 14ch;
 
 }
 
 sidebar img {
-    height: 2rem;
-    padding: 0;
+    height: 1.5rem;
+    /* padding-bottom: calc(var(--base-padding) * 2); */
+}
+
+sidebar button {
+    margin-bottom: calc(var(--base-margin) * 2.5);
+}
+
+profile-container img {
+    height: 3rem;
+
 }
 
 }
