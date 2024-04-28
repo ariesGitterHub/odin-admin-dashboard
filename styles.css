@@ -17,7 +17,7 @@
 
 * {
     font-family: "Righteous", Verdana, Tahoma, sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin: 0;
     padding: 0;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
 }
 
 h2 {
@@ -37,11 +37,11 @@ h2 {
 
 grid-container {
     display: grid;
-    grid-template-columns: .15fr 5fr;
-    grid-template-rows: .25fr 1fr 4fr .25fr;
+    grid-template-columns: .1fr 4fr;
+    grid-template-rows: .1fr 5fr .5fr;
     grid-template-areas: 
     "header     header"
-    "sidebar    navbar"
+    /* "navbar   navbar" */
     "sidebar    main-content"
     "footer     footer";
     gap: 20px
@@ -50,7 +50,7 @@ grid-container {
 /* HEADER */
 
 header {
- 
+ position: static;
     background: var(--sunny);
     padding: calc(var(--base-padding) * 2);
     display: flex;
@@ -138,26 +138,42 @@ navbar {
     border-bottom-left-radius: var(--base-radius);
     grid-area: navbar;
     padding: calc(var(--base-padding) * 2);
+    display: flex;
+    gap: 5px;
 }
 
-profile-container {
+navbar-tile {
     width: min-content;
     background: var(--mauve);
     border: 5px solid var(--mauve);
     border-radius: var(--base-radius);
     color: var(--bg-blue);
+    /* display: grid; */
+    margin: calc(var(--base-margin) * 2);
+    padding: calc(var(--base-padding) * 2);
+
+}
+
+navbar-tile h6 {
+    font-size: 1rem;
+            padding: calc(var(--base-padding) * 1);
+}
+
+navbar-tile hr {
+   border-color: var(--bg-blue);
+}
+
+profile {
+    height:auto;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
+    /* padding: calc(var(--base-padding) * 1); */
 }
 
-profile-container h2 {
-    padding: calc(var(--base-padding) * 2)
-}
-
-profile-container img {
+profile img {
     height: 4rem;
-
+    padding-right: var(--base-padding);
 }
 
 /* MAIN-CONTENT */
@@ -173,14 +189,14 @@ main-content {
     padding: calc(var(--base-padding) * 2);
 
     display: grid;
-grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 main-content h2 {
     color: var(--sunny);
 }
 
-card {
+project-card {
     /* height: fit-content; */
     /* width: fit-content; */
     background: var(--sunny);
@@ -190,22 +206,22 @@ card {
     padding: calc(var(--base-padding) * 2);
 }
 
-card a {
+project-card a {
     font-size: 1rem;
     text-decoration: none;
 }
 
-card h3 a {
+project-card h3 a {
     font-size: 1.2rem;
 }
 
 
-card a:link, card a:visited {
+project-card a:link, project-card a:visited {
     color: var(--bg-blue);
 
 }
 
-card a:hover {
+project-card a:hover {
     color: var(--smoke);
         text-decoration: underline;
 }
@@ -214,16 +230,16 @@ card a:hover {
     color: var(--sunset);
 } */
 
-card p {
+project-card p {
     color: var(--bg-blue);
     font-size: 1rem;
 
 }
 
-card em {
+project-card em {
     font-size: 1rem;
 }
-card img {
+project-card img {
     height:30px;    
 }
 
@@ -348,6 +364,10 @@ h1 {
     font-size: 1.75rem;
 }
 
+h2 {
+    font-size: 1.5rem;
+}
+
 header {
     align-items: center;
     justify-content: center;
@@ -376,6 +396,10 @@ sidebar button {
 profile-container img {
     height: 3rem;
 
+}
+
+button {
+    font-size: 1.1rem;
 }
 
 }
