@@ -38,7 +38,7 @@ h2 {
 grid-container {
     display: grid;
     grid-template-columns: .1fr 4fr;
-    grid-template-rows: .1fr 1fr 1fr;
+    grid-template-rows: .1fr 2fr 1fr;
     grid-template-areas: 
     "header     header"
     /* "navbar   navbar" */
@@ -132,7 +132,7 @@ sidebar {
 
 /* NAVBAR */
 
-navbar {
+/* navbar {
     background: var(--sunset);
     border-top-left-radius: var(--base-radius);
     border-bottom-left-radius: var(--base-radius);
@@ -140,15 +140,15 @@ navbar {
     padding: calc(var(--base-padding) * 2);
     display: flex;
     gap: 5px;
-}
+} */
 
-navbar-tile {
+/* navbar-tile {
     width: min-content;
     background: var(--mauve);
     border: 5px solid var(--mauve);
     border-radius: var(--base-radius);
     color: var(--bg-blue);
-    /* display: grid; */
+
     margin: calc(var(--base-margin) * 2);
     padding: calc(var(--base-padding) * 2);
 
@@ -161,7 +161,7 @@ navbar-tile h6 {
 
 navbar-tile hr {
    border-color: var(--bg-blue);
-}
+} */
 
 profile {
     height:auto;
@@ -192,9 +192,7 @@ main-content {
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-main-content h2 {
-    color: var(--sunny);
-}
+
 
 project-card {
     /* height: fit-content; */
@@ -209,6 +207,10 @@ project-card {
 project-card a {
     font-size: 1rem;
     text-decoration: none;
+}
+
+project-card h2 {
+    color: var(--sunny);
 }
 
 project-card h3 a {
@@ -253,6 +255,39 @@ card-images {
         background: var(--dusk);
         border: 11px dashed var(--sunny);
 }
+
+announcement-tile, trending-tile {
+    /* height: fit-content; */
+    /* width: fit-content; */
+    background: var(--sunset);
+
+    border-radius: var(--base-radius);
+    display: grid;
+    margin: calc(var(--base-margin) * 2);
+    padding: calc(var(--base-padding) * 2);
+
+}
+
+announcement-tile h2, trending-tile h2 {
+    color: var(--bg-blue);
+}
+
+/* announcement-tile hr {
+    border-top: 1px dotted var(--bg-blue);
+    border-color: var(--bg-blue);
+} */
+
+input[type='checkbox'] {
+             width: 16px;
+         height: 16px;
+         top: 0;
+         left: 0;
+         border: 4px solid gold;
+         border-radius: 3px;
+         background-color: red;
+         margin: var(--base-margin);
+}
+
 
 /* FOOTER */
 
