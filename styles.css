@@ -10,6 +10,8 @@
 --smoke: #355C7D;
 --bg-blue: #1C274C;
 
+
+
 --base-padding: 5px;
 --base-margin: 5px;
 --base-radius: 15px;
@@ -32,7 +34,31 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1.05rem;
+}
+
+a, p, em {
+    font-size: 1rem;
+}
+
+a:link, a:visited {
+    color: var(--bg-blue);
+
+}
+
+a:hover {
+    color: var(--smoke);
+        text-decoration: underline;
+}
+
+hr {
+    max-height: 0;
+    border-color: var(--bg-blue);
+    margin: 8px 0 8px 0;
 }
 
 grid-container {
@@ -167,14 +193,15 @@ profile {
     height:auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     /* padding: calc(var(--base-padding) * 1); */
 }
 
 profile img {
-    height: 4rem;
+    height: 3rem;
     padding-right: var(--base-padding);
 }
+
 
 /* MAIN-CONTENT */
 
@@ -191,6 +218,10 @@ main-content {
     display: grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+/* ??????????????????????????? */
+three-boxes {
+    display: grid;
+}
 
 
 
@@ -204,21 +235,17 @@ project-card {
     padding: calc(var(--base-padding) * 2);
 }
 
-project-card a {
-    font-size: 1rem;
-    text-decoration: none;
-}
 
 project-card h2 {
     color: var(--sunny);
 }
 
-project-card h3 a {
+/* project-card h3 a {
     font-size: 1.2rem;
-}
+} */
 
 
-project-card a:link, project-card a:visited {
+/* project-card a:link, project-card a:visited {
     color: var(--bg-blue);
 
 }
@@ -226,7 +253,7 @@ project-card a:link, project-card a:visited {
 project-card a:hover {
     color: var(--smoke);
         text-decoration: underline;
-}
+} */
 
 /* card a:active {
     color: var(--sunset);
@@ -234,12 +261,12 @@ project-card a:hover {
 
 project-card p {
     color: var(--bg-blue);
-    font-size: 1rem;
+    /* font-size: 1rem; */
 
 }
 
 project-card em {
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 project-card img {
     height:30px;    
@@ -252,15 +279,15 @@ card-images {
 }
 
 .special-card {
-        background: var(--dusk);
-        border: 11px dashed var(--sunny);
+    background: var(--dusk);
+    border: 7px dashed var(--sunny);
 }
 
-announcement-tile, trending-tile {
+alert-tile {
     /* height: fit-content; */
     /* width: fit-content; */
     background: var(--sunset);
-
+    color: var(--bg-blue);
     border-radius: var(--base-radius);
     display: grid;
     margin: calc(var(--base-margin) * 2);
@@ -268,14 +295,41 @@ announcement-tile, trending-tile {
 
 }
 
-announcement-tile h2, trending-tile h2 {
+alert-tile h2{
     color: var(--bg-blue);
 }
 
-/* announcement-tile hr {
-    border-top: 1px dotted var(--bg-blue);
-    border-color: var(--bg-blue);
-} */
+alert-tile a, alert-tile p {
+    font-size: 1rem;
+}
+
+.my-profile {
+    display: flex;
+    flex-direction: column;
+
+    background: var(--dusk);
+        border: 7px dashed var(--sunny);
+    border-radius: var(--base-radius);
+    color: var(--smoke);
+
+}
+
+.my-profile h2 {
+    color: var(--sunny);
+}
+
+.my-profile h3 {
+    color: var(--sunny);
+}
+
+.my-profile hr {
+    border-color: var(--sunny);
+}
+
+.my-profile img {
+    height: 4.5rem;
+}
+
 
 input[type='checkbox'] {
              width: 16px;
@@ -400,7 +454,15 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+a, p, em {
+    font-size: .9rem;
 }
 
 header {
@@ -428,10 +490,6 @@ sidebar button {
     margin-bottom: calc(var(--base-margin) * 2.5);
 }
 
-profile-container img {
-    height: 3rem;
-
-}
 
 button {
     font-size: 1.1rem;
