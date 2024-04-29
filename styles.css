@@ -93,6 +93,7 @@ logo-text-container {
     display: flex;
     align-items: center;
     justify-self: start;
+    /* padding-bottom: calc(var(--base-padding)); */
 }
 
 search-bar-container {
@@ -108,7 +109,7 @@ form {
 }
 
 header img {
-    height: 80px;
+    height: 4rem;
 }
 
 header logo-text-container h1 {
@@ -141,6 +142,9 @@ header input:focus{
   color: var(--bg-blue);
 }
 
+hamburger-container {
+    display: none;
+}
 
 
 
@@ -229,6 +233,7 @@ project-card {
     /* height: fit-content; */
     /* width: fit-content; */
     background: var(--sunny);
+        border: 7px double var(--smoke);
     border-radius: var(--base-radius);
     display: grid;
     margin: calc(var(--base-margin) * 2);
@@ -280,7 +285,7 @@ card-images {
 
 .special-card {
     background: var(--dusk);
-    border: 7px dashed var(--sunny);
+    border: 7px dashed var(--smoke);
 }
 
 alert-tile {
@@ -308,26 +313,19 @@ alert-tile a, alert-tile p {
     flex-direction: column;
 
     background: var(--dusk);
-        border: 7px dashed var(--sunny);
+        /* border: 7px dashed var(--sunny); */
     border-radius: var(--base-radius);
     color: var(--smoke);
 
 }
 
-.my-profile h2 {
+.my-profile h2,.my-profile h3, .my-profile hr    {
     color: var(--sunny);
-}
-
-.my-profile h3 {
-    color: var(--sunny);
-}
-
-.my-profile hr {
     border-color: var(--sunny);
 }
 
 .my-profile img {
-    height: 4.5rem;
+    height: 4rem;
 }
 
 
@@ -466,14 +464,35 @@ a, p, em {
 }
 
 header {
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: var(--base-padding);
-
 }
 
 header img {
-    height: 60px;
+    height: 2.7rem;
+}
+
+
+
+hamburger-container {
+    display: flex;
+
+
+}
+
+hamburger-container img {
+height: 3rem;
+}
+
+div {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+logo-text-container {
+
 }
 
 header input {
