@@ -83,7 +83,7 @@ grid-container {
 /* GLOBAL BUTTONS                        */
 
 button {
-    width: 18rem;
+    width: 15rem;
     background: var(--smoke);
     border: 5px solid var(--smoke);
     color: var(--sunny);
@@ -320,6 +320,11 @@ project-card-links {
     color: var(--sunny);
 }
 
+main-content button {
+    width: auto;
+    background: var(--dusk);
+    border: 7px solid var(--dusk);
+}
 
 
 /* FOOTER                                */
@@ -339,20 +344,22 @@ footer p {
     font-size: 1rem;
 }
 
-main-content button {
-    width: auto;
-    background: var(--dusk);
-    border: 7px solid var(--dusk);
-}
-
 
 /* MEDIA QUERIES                         */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
 
 .toggle-text {
     display: none;
-  }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--base-padding);
+}
+
 
 sidebar button {
     width: fit-content;
@@ -366,77 +373,85 @@ sidebar button img {
     padding: 0;
 }
 
+.my-profile img {
+    height: 4.5rem;
 }
 
+}
 
 @media only screen and (max-width: 600px) {
 
-h1 {
-    font-size: 1.75rem;
-}
+    sidebar button {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        padding: calc(var(--base-padding) / 2);
+    }
+    sidebar button img {
+        height: 2rem;
+        padding: 0;
+    }
 
-h2 {
-    font-size: 1.2rem;
-}
-
-h3 {
-    font-size: 1rem;
-}
-
-a, p, em {
-    font-size: .9rem;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--base-padding);
-}
-
-header img {
-    height: 3rem;
+    sidebar button {
+        margin-bottom: calc(var(--base-margin) * 2.2);
+    }
 }
 
 
+@media only screen and (max-width: 400px) {
 
-hamburger-container {
-    display: flex;
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    a, p, em {
+        font-size: 1rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: var(--base-padding);
+    }
+
+    header img {
+        height: 3rem;
+    }
 
 
+
+    hamburger-container {
+        display: flex;
+
+
+    }
+
+    header input {
+        width: 13ch;
+
+    }
+
+    sidebar button img {
+        height: 1.5rem;
+
+    }
+
+    .my-profile img {
+    height: 4rem;
 }
 
-hamburger-container img {
-height: 3rem;
-}
-
-
-
-logo-text-container {
-
-}
-
-header input {
-    width: 14ch;
-
-}
-
-sidebar button img {
-    height: 1.5rem;
-
-}
-
-sidebar button {
-    margin-bottom: calc(var(--base-margin) * 2.2);
-}
-
-button {
-    font-size: 1rem;
-}
-
-footer p {
-    font-size: .8rem;
-}
+    footer p {
+        font-size: .8rem;
+    }
 
 }
 
