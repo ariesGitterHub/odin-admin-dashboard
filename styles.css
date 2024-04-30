@@ -122,6 +122,7 @@ header {
         justify-content: center;
         gap: 20px;   
     padding: calc(var(--base-padding) * 2);
+    position: sticky;
 }
 
 logo-text-container {
@@ -481,27 +482,26 @@ sidebar button img {
         width: auto;
         background: var(--sunny);
         border: 1px double var(--sunny) ;
-        border-radius: var(--base-radius);
+        border-radius: 13px;
         color: var(--sunny);
         display: flex;
             justify-content: center;
             align-items: center;
         outline: none;
-        margin: 0;
+        margin-left: var(--base-margin);
         padding: 0;
     }
 
     hamburger-container button:hover {
         background: var(--sunny);
         border: 1px double var(--sunny) ;
-        border-radius: 13px;
         color: var(-sunny);
         outline: none;
     }
 
     hamburger-container button:active {
         background: var(--mauve);
-        border: 1px double var(--sunny) ;
+        border: 1px double var(--sunny);
     }
 
 
