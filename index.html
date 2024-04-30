@@ -1,266 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js" defer=""></script>
-    <title>Odin Admin Dashboard</title>
-</head>
-<body>
-
-    <grid-container>
-        <header>
-            <!-- <hamburger-container>
-                <img src="./assets/hamburger-menu.svg" alt="">
-            </hamburger-container> -->
-
-            <logo-text-container>
-            <img src="./assets/cup-logo.svg" alt=""> 
-            <h1>myDashboard</h1>   
-            </logo-text-container>
-            <search-bar-container>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="javascript.js" defer=""></script>
+        <title>Odin Admin Dashboard</title>
+    </head>
+    <body>
+        <grid-container>
+            <header>
+                <logo-text-container>
+                    <img src="./assets/cup-logo.svg" alt=""> 
+                    <h1>myDashboard</h1>   
+                </logo-text-container>
+                <search-bar-container>
                 <form action="">
                 <input type="text" placeholder="Search..." name="search">
                 <button type="submit">Go!</button>
                 </form>    
-            </search-bar-container>
-
-
-
-
-
-        </header>  
-
-        <!-- <navbar>
-
-            <navbar-tile>
-                <h6>Logged in...</h6>
-                <hr>
-            <profile><img src="./assets/mmm-Logo-2024-04-27.svg" alt="">
-            <h2>MadMuffinMan</h2></profile>
-            </navbar-tile>
-
-
-        </navbar> -->
-
-        <sidebar>
-
-                    
-            <button-container>
-
-<button><img src="./assets/home.svg" alt=""><p class="toggle-text">myHome</p></button>
-<button><img src="./assets/profile.svg" alt=""><p class="toggle-text">myProfile</p></button> 
-<button><img src="./assets/messages.svg" alt=""><p class="toggle-text">myMessages</p></button> 
-<button><img src="./assets/history.svg" alt=""><p class="toggle-text">myHistory</p></button> 
-<button><img src="./assets/tasks.svg" alt=""><p class="toggle-text">myTasks</p></button> 
-<button><img src="./assets/communities.svg" alt=""><p class="toggle-text">myCommunities</p></button> 
-<br>
-<button><img src="./assets/settings.svg" alt=""><p class="toggle-text">Settings</p></button> 
-<button><img src="./assets/support.svg" alt=""><p class="toggle-text">Support</p></button> 
-<button><img src="./assets/privacy.svg" alt=""><p class="toggle-text">Privacy</p></button> 
-            </button-container>
-
-
-
-
-        </sidebar>
-
-        <main-content>
-<!-- <three-boxes> -->
-
-<alert-tile class="my-profile">
-    <h2>Hello, </h2>
-    <hr>
-    <profile>
-        <img src="./assets/mmm-Logo-2024-04-27.svg" alt="">
-        <name>
-            <h3>Drew R.E. Lane</h3> 
-            <h3>(@madmuffinman)</h3>  
-        </name>
-    </profile>
-    <hr>
-    <br>
-    <h2>Welcome back! Please be sure to check your myAnnouncements.</h2>
-</alert-tile>
-   <alert-tile>
-    <h2>myAnnouncements</h2>
-        <h3>Site Maintenance</h3> 
-        <em>Scheduled for 5/4/2024 @ 9PM.</em>
-    <hr>
-        <h3>Privacy Policy Update</h3>
-        <em><a href="">Please read the new privacy conditions.</a></em>
-    <hr>
-        <h3>New Features</h3>
-        <em><a href="">See whats's new!</a></em>
-</alert-tile>
-
-<alert-tile>
-    <h2>Trending</h2>
-            <profile>
-                <img src="./assets/profile3.svg" alt="">
-                <name>
-                    <h3>@turtletart</h3>
-                    <p>Surf's Up App</p> 
-                </name>
-            </profile>
-            <hr>
-            <profile>
-                <img src="./assets/profile2.svg" alt="">
-                <name>
-                    <h3>@bananamana</h3>
-                    <p>Monkey's Paw!!!!</p> 
-                </name>
-            </profile>
-            <hr>
-            <profile>
-                <img src="./assets/profile1.svg" alt="">
-                <name>
-                    <h3>@squidoo</h3>
-                    <p>Bionic Brains</p> 
-                </name>
-            </profile>
-            <hr>
-                <profile>
-                <img src="./assets/profile4.svg" alt="">
-                <name>
-                    <h3>@mufasapasta</h3>
-                    <p>Super Fun Party-time</p> 
-                </name>
-            </profile>
-            <hr>
-</alert-tile> 
-<!-- </three-boxes> -->
-
-
-<project-card class="special-card">
-<h2>myProjects</h2>
-<button><img src="./assets/new.svg" alt="">New Project</button> 
-<button><img src="./assets/share.svg" alt="">Share Project</button> 
-<button><img src="./assets/delete.svg" alt="">Delete Project</button> 
-</project-card>
-
-<project-card>
-    <h3><a href="">"Super Creative Money-Maker"</a></h3>
-    <p>THIS IS NOT A PROJECT YET. Fingers crossed, I will hopefilly learn enough to write this sort of app someday. :-) </p>
-    <card-images>
-        <img src="./assets/like.svg" alt="">
-        <img src="./assets/love.svg" alt="">
-        <img src="./assets/link.svg" alt="">
-    </card-images>
-</project-card>
-
-<project-card>
-    <h3><a href="">"T.O.P. Admin Dashboard"</a></h3>
-    <p><em>This web site you are looking at now is just a mock up of an admin-type dashboard that was done for The Odin Project (T.O.P).</em> I hope you like the design. I wanted this project to not look like the sample picture that was provided <a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/43cc6ab69fdfbef40d431a65677d2144668930ac/intermediate_html_css/grid/project_admin_dashboard/imgs/dashboard-project.png">here</a>.</p>
-    <card-images>
-        <img src="./assets/like.svg" alt="">
-        <img src="./assets/love.svg" alt="">
-        <img src="./assets/link.svg" alt="">
-    </card-images>
-</project-card>
-
-<project-card>
-    <h3><a href="https://ariesgitterhub.github.io/odin-sign-up-form/">"T.O.P. Sign-Up Form"</a></h3>
-    <p>Rather than make a boring sign-up form, I created an imaginary lecture sign-up with way too many fun "Lovecraftian" references.</p>
-    <card-images>
-        <img src="./assets/like.svg" alt="">
-        <img src="./assets/love.svg" alt="">
-        <img src="./assets/link.svg" alt="">
-    </card-images>
-</project-card>
-
-<project-card>
-    <h3><a href="https://ariesgitterhub.github.io/odin-calculator/">"T.O.P. Calculator"</a></h3>
-    <p>This project hews closer to the basic project parameters of a calculator. However, I had to add extra fun buttons, like a Roman numeral converter, and a "The Meaning of Life" button.</p>
-    <card-images>
-        <img src="./assets/like.svg" alt="">
-        <img src="./assets/love.svg" alt="">
-        <img src="./assets/link.svg" alt="">
-    </card-images>
-</project-card>
-
-<project-card>
-    <h3><a href="https://ariesgitterhub.github.io/odin-etch-a-sketch/">"T.O.P. Etch-a-Sketch"</a></h3>
-    <p>This project started off following the project brief of creating an etch-a-sketch, but it quickly morphed in a bigger project as I became obsessed with making a TTRPG dungeon-maker that also happened to be an etch-a-sketch.</p>
-    <card-images>
-        <img src="./assets/like.svg" alt="">
-        <img src="./assets/love.svg" alt="">
-        <img src="./assets/link.svg" alt="">
-    </card-images>
-</project-card>
-
-<project-card>
-    <h3><a href="https://ariesgitterhub.github.io/odin-rock-paper-scissors/">"T.O.P. Rock-Paper-Scissors"</a></h3>
-    <p>This was one of my favorite T.O.P. projects. rather than make a "rock-paper-scissors" type game like everyone else, I made a five fold choice using the mystical elements of Wood, Fire, Water, Earth, and Metal.</p>
-    <card-images>
-        <img src="./assets/like.svg" alt="">
-        <img src="./assets/love.svg" alt="">
-        <img src="./assets/link.svg" alt="">
-    </card-images>
-</project-card>
-
-<project-card>
-    <h3><a href="https://ariesgitterhub.github.io/odin-landing-page/">"T.O.P. Landing Page"</a></h3>
-    <p>A pretty straight forward landing page, but one that I felt needed a silly angle with which to amuse myself. Click the link to see what I am talking about.</p>
-    <card-images>
-        <img src="./assets/like.svg" alt="">
-        <img src="./assets/love.svg" alt="">
-        <img src="./assets/link.svg" alt="">
-    </card-images>
-</project-card>
-
-<project-card>
-    <h3><a href="https://ariesgitterhub.github.io/odin-recipe/">"T.O.P. Recipe Page"</a></h3>
-    <p>An early Odin Project HTML project. It's pretty basic stuff. Set an alarm in case you fall asleep.</p>
-    <card-images>
-        <img src="./assets/like.svg" alt="">
-        <img src="./assets/love.svg" alt="">
-        <img src="./assets/link.svg" alt="">
-    </card-images>
-</project-card>
-
-<project-card>
-    <h3><a href="https://fcc-clock-test-2023-ew708.netlify.app/">"F.C.C. Pomodoro Clock"</a></h3>
-    <p>This was a fun coding challenge I did last year for Free Code Camp (F.C.C.). It's a useful app too for time management. This is definitely code that I need to revisit and tinker more with, as it functions differently on some browsers. Once again, Linux Chrome won't display emojis properly, but it still passes all the F.C.C. test though!</p>
-    <card-images>
-        <img src="./assets/like.svg" alt="">
-        <img src="./assets/love.svg" alt="">
-        <img src="./assets/link.svg" alt="">
-    </card-images>
-</project-card>
-
-<project-card>
-    
-    <h3><a href="https://scintillating-muffin-134894.netlify.app/">"Stupid Sound Machine"</a></h3>
-    <p>One of my favorite older apps due to its ridiculousness. Sadly, this app definitely does not work in Linux Chrome.</p>
-    <card-images>
-        <img src="./assets/like.svg" alt="">
-        <img src="./assets/love.svg" alt="">
-        <img src="./assets/link.svg" alt="">
-    </card-images>
-</project-card>
-
-<project-card>
-    <h3><a href="https://whimsical-banoffee-187bf5.netlify.app/">"Star-Sign Quote Generator"</a></h3>
-    <p>My first real app from last year. This was done using React. This app works best in anything but a Linux Chrome browser. </p>
-    <card-images>
-        <img src="./assets/like.svg" alt="">
-        <img src="./assets/love.svg" alt="">
-        <img src="./assets/link.svg" alt="">
-    </card-images>
-</project-card>
-
-
-
-
-        </main-content>
-        <footer>
-            <p>Mad Muffin Man Design Studio, Copyright 2024</p>
-        </footer>
-
-    </grid-container>
-
-
-</body>
+                </search-bar-container>
+            </header>  
+            <sidebar>
+                <button>
+                    <img src="./assets/home.svg" alt="">
+                    <p class="toggle-text">myHome</p>
+                </button>
+                <button>
+                    <img src="./assets/profile.svg" alt="">
+                    <p class="toggle-text">myProfile</p>
+                </button> 
+                <button>
+                    <img src="./assets/messages.svg" alt="">
+                    <p class="toggle-text">myMessages</p>
+                </button> 
+                <button>
+                    <img src="./assets/history.svg" alt="">
+                    <p class="toggle-text">myHistory</p>
+                </button> 
+                <button>
+                    <img src="./assets/tasks.svg" alt="">
+                    <p class="toggle-text">myTasks</p>
+                </button> 
+                <button>
+                    <img src="./assets/communities.svg" alt="">
+                    <p class="toggle-text">myCommunities</p>
+                </button> 
+                <br>
+                <button>
+                    <img src="./assets/settings.svg" alt="">
+                    <p class="toggle-text">Settings</p>
+                </button> 
+                <button>
+                    <img src="./assets/support.svg" alt="">
+                    <p class="toggle-text">Support</p>
+                </button> 
+                <button>
+                    <img src="./assets/privacy.svg" alt="">
+                    <p class="toggle-text">Privacy</p>
+                </button> 
+            </sidebar>
+            <main-content>
+                <non-project-card class="my-profile">
+                    <h2>Hello, </h2>
+                    <hr>
+                    <profile>
+                        <img src="./assets/mmm-Logo-2024-04-27.svg" alt="">
+                        <name>
+                            <h3>Drew R.E. Lane</h3> 
+                            <h3>(@madmuffinman)</h3>  
+                        </name>
+                    </profile>
+                    <hr>
+                    <br>
+                    <h2>Welcome back! Please be sure to check your myAnnouncements.</h2>
+                </non-project-card>
+                <non-project-card>
+                    <h2>myAnnouncements</h2>
+                    <h3>Site Maintenance</h3> 
+                    <em>Scheduled for 5/4/2024 @ 9PM.</em>
+                    <hr>
+                    <h3>Privacy Policy Update</h3>
+                    <a href=""><em>Please read the new privacy conditions.</em></a>
+                    <hr>
+                    <h3>New Features</h3>
+                    <a href=""><em>See whats's new!</em></a>
+                </non-project-card>
+                <non-project-card>
+                    <h2>Trending</h2>
+                    <profile>
+                        <img src="./assets/profile3.svg" alt="">
+                        <name>
+                            <h3>@turtletart</h3>
+                            <p>Surf's Up App</p> 
+                        </name>
+                    </profile>
+                    <hr>
+                    <profile>
+                        <img src="./assets/profile2.svg" alt="">
+                        <name>
+                            <h3>@bananamana</h3>
+                            <p>Monkey's Paw!!!!</p> 
+                        </name>
+                    </profile>
+                    <hr>
+                    <profile>
+                        <img src="./assets/profile1.svg" alt="">
+                        <name>
+                            <h3>@squidoo</h3>
+                            <p>Bionic Brains</p> 
+                        </name>
+                    </profile>
+                    <hr>
+                    <profile>
+                        <img src="./assets/profile4.svg" alt="">
+                        <name>
+                            <h3>@mufasapasta</h3>
+                            <p>Super Fun Party-time</p> 
+                        </name>
+                    </profile>
+                </non-project-card> 
+                <project-card class="special-card">
+                    <h2>myProjects</h2>
+                    <button>
+                        <img src="./assets/new.svg" alt="">
+                        <p>New Project</p>
+                    </button> 
+                    <button>
+                        <img src="./assets/share.svg" alt="">
+                        <p>Share Project</p>
+                    </button> 
+                    <button>
+                        <img src="./assets/delete.svg" alt="">
+                        <p>Delete Project</p>
+                    </button> 
+                </project-card>
+                <project-card>
+                    <project-card-content>
+                        <h3>
+                            <a href="">"T.O.P. Admin Dashboard"</a>
+                        </h3>
+                        <br>
+                        <p>
+                            <em>This web site you are looking at now is just a mock up of an admin-type dashboard that was done for The Odin Project (T.O.P).</em> I hope you like the design. I wanted this project to not look like the sample picture that was provided <a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/43cc6ab69fdfbef40d431a65677d2144668930ac/intermediate_html_css/grid/project_admin_dashboard/imgs/dashboard-project.png">here</a>.
+                        </p>
+                    </project-card-content>
+                    <project-card-links>
+                        <a href=""><img src="./assets/like.svg" alt=""></a>
+                        <a href=""><img src="./assets/love.svg" alt=""></a>
+                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                    </project-card-links>
+                </project-card>
+                <project-card>
+                    <project-card-content>
+                    <h3>
+                        <a href="https://ariesgitterhub.github.io/odin-sign-up-form/">"T.O.P. Sign-Up Form"</a>
+                    </h3>
+                    <br>
+                    <p>Rather than make a boring sign-up form, I created an imaginary lecture sign-up form with way too many fun "Lovecraftian" horror story references.</p>
+                    </project-card-content>
+                    <project-card-links>
+                        <a href=""><img src="./assets/like.svg" alt=""></a>
+                        <a href=""><img src="./assets/love.svg" alt=""></a>
+                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                    </project-card-links>
+                </project-card>
+                <project-card>
+                    <project-card-content>
+                        <h3>
+                            <a href="https://ariesgitterhub.github.io/odin-calculator/">"T.O.P. Calculator"</a>
+                        </h3>
+                        <br>
+                        <p>This project hews closer to the basic project parameters of a calculator. However, I had to add extra fun buttons, like a Roman numeral converter, and a "The Meaning of Life" button.</p>
+                    </project-card-content>
+                    <project-card-links>
+                        <a href=""><img src="./assets/like.svg" alt=""></a>
+                        <a href=""><img src="./assets/love.svg" alt=""></a>
+                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                    </project-card-links>
+                </project-card>
+                <project-card>
+                    <project-card-content>
+                        <h3>
+                            <a href="https://ariesgitterhub.github.io/odin-etch-a-sketch/">"T.O.P. Etch-a-Sketch"</a>
+                        </h3>
+                        <br>
+                        <p>This project started off following the project brief of creating an etch-a-sketch, but it quickly morphed in a bigger project as I became obsessed with making a TTRPG dungeon-maker that also happened to be an etch-a-sketch.</p>
+                    </project-card-content>
+                    <project-card-links>
+                        <a href=""><img src="./assets/like.svg" alt=""></a>
+                        <a href=""><img src="./assets/love.svg" alt=""></a>
+                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                    </project-card-links>
+                </project-card>
+                <project-card>
+                    <project-card-content>
+                        <h3>
+                            <a href="https://ariesgitterhub.github.io/odin-rock-paper-scissors/">"T.O.P. Rock-Paper-Scissors"</a>
+                        </h3>
+                        <br>
+                        <p>This was one of my favorite T.O.P. projects. Rather than make a "rock-paper-scissors" type game like everyone else, players in my game choose one of the mystical elements of Wood, Fire, Water, Earth, and Metal.</p>
+                    </project-card-content>
+                    <project-card-links>
+                        <a href=""><img src="./assets/like.svg" alt=""></a>
+                        <a href=""><img src="./assets/love.svg" alt=""></a>
+                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                    </project-card-links>
+                </project-card>
+                <project-card>
+                    <project-card-content>
+                    <h3>
+                        <a href="https://ariesgitterhub.github.io/odin-landing-page/">"T.O.P. Landing Page"</a>
+                    </h3>
+                    <br>
+                    <p>A pretty straight forward landing page, but one that I felt needed a silly angle with which to amuse myself. Click the link to see what I am talking about.</p>
+                    </project-card-content>
+                    <project-card-links>
+                        <a href=""><img src="./assets/like.svg" alt=""></a>
+                        <a href=""><img src="./assets/love.svg" alt=""></a>
+                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                    </project-card-links>
+                </project-card>
+                <project-card>
+                    <project-card-content>
+                        <h3>
+                            <a href="https://ariesgitterhub.github.io/odin-recipe/">"T.O.P. Recipe Page"</a>
+                        </h3>
+                        <br>
+                        <p>An early Odin Project HTML challenge. It's pretty basic stuff. Set an alarm in case you fall asleep.</p>
+                    </project-card-content>
+                    <project-card-links>
+                        <a href=""><img src="./assets/like.svg" alt=""></a>
+                        <a href=""><img src="./assets/love.svg" alt=""></a>
+                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                    </project-card-links>
+                </project-card>
+                <project-card>
+                    <project-card-content>
+                        <h3>
+                            <a href="https://fcc-clock-test-2023-ew708.netlify.app/">"F.C.C. Pomodoro Clock"</a>
+                        </h3>
+                        <br>
+                        <p>This was a fun coding challenge that I wrote last year for Free Code Camp (F.C.C.). It's also useful for time management. This is definitely code that I need to revisit and tinker around with, as it functions a wee bit differently depending on the  browser. Once again, the Linux Chrome browser won't display this project's emoji images or end alarm sound properly.</p>
+                    </project-card-content>
+                    <project-card-links>
+                        <a href=""><img src="./assets/like.svg" alt=""></a>
+                        <a href=""><img src="./assets/love.svg" alt=""></a>
+                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                    </project-card-links>
+                </project-card>
+                <project-card>
+                    <project-card-content>
+                        <h3>
+                            <a href="https://scintillating-muffin-134894.netlify.app/">"Stupid Sound Machine"</a>
+                        </h3>
+                        <br>
+                        <p>One of my favorite older apps that has some humorous "local pub conversation utility." Sadly, this app definitely breaks if using a Linux Chrome browser.</p>
+                    </project-card-content>
+                    <project-card-links>
+                        <a href=""><img src="./assets/like.svg" alt=""></a>
+                        <a href=""><img src="./assets/love.svg" alt=""></a>
+                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                    </project-card-links>
+                </project-card>
+                <project-card>
+                    <project-card-content>
+                        <h3>
+                            <a href="https://whimsical-banoffee-187bf5.netlify.app/">"Star-Sign Quote Generator"</a>
+                        </h3>
+                        <br>
+                        <p>My first real app from last year that was created using React. Please note that this app works best in most browsers, desktop or mobile, but using a Linux Chrome browser will cause some images to fail. </p>
+                    </project-card-content>                 
+                    <project-card-links>
+                        <a href=""><img src="./assets/like.svg" alt=""></a>
+                        <a href=""><img src="./assets/love.svg" alt=""></a>
+                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                    </project-card-links>
+                </project-card>
+            </main-content>
+            <footer>
+                <p>Mad Muffin Man Design Studio, Copyright 2024</p>
+            </footer>
+        </grid-container>
+    </body>
 </html>

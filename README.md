@@ -46,4 +46,8 @@ Before you move on, we would love it if you could submit your feedback on the In
 
 ATTRIBUTIONS
 
-[Solar Bold Icons Collection](https://www.svgrepo.com/collection/solar-bold-icons/)
+[Solar Bold Icons Collection](https://www.svgrepo.com/collection/solar-bold-icons/) were used for basic GUI icons.
+
+[Animal Outlined Sepia Icons Collection](https://www.svgrepo.com/collection/animal-outlined-sepia-icons/) were used for trending profile icons.
+
+"@madmuffinman" logo was created for this project, copyright 2024.
