@@ -399,10 +399,14 @@ sidebar button img {
     sidebar button {
         margin-bottom: calc(var(--base-margin) * 2.2);
     }
+
+    project-card img {
+    height: 2rem;    
+}
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 440px) {
 
     h1 {
         font-size: 1.75rem;
@@ -514,10 +518,13 @@ sidebar button img {
     }
 
     main-content {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
 
-        }
+    project-card img {
+        height: 1.75rem;    
+    }
 
     footer p {
         font-size: .8rem;
