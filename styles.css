@@ -433,41 +433,68 @@ sidebar button img {
             "header"
             "main-content"
             "footer";
-            gap: 20px;
+            gap: 10px;
             place-content: center;
     }
 
-    header {
-        /* display: flex; */
+
+    /* header {
+        position: fixed;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        border-bottom: 1.5rem solid var(--bg-blue);
         align-items: center;
         justify-content: center;
-        padding: var(--base-padding);
+        padding: calc(var(--base-padding) * 4);
+        gap: 9px;
+    } */
+
+
+        header {
+        position: fixed;
+
+        border-bottom: 1.5rem solid var(--bg-blue);
+        display: grid;
+        grid-template-areas:
+        "hamburger logo-text"
+        "hamburger search-bar";
+        grid-template-columns: .5fr 1fr;
+        place-content: stretch;
+        padding: calc(var(--base-padding) * 3);
+        padding-left: .35rem;
         gap: 9px;
     }
 
-    header img {
-        height: 3rem;
-    }
+        hamburger-container {
+        align-self: end;
+        grid-area: hamburger;
 
-
-    hamburger-container {
         display: flex;
+        flex-direction: column;
+            justify-content: center;
+            align-items: center
+            
     }
 
-    header input {
+    logo-text-container img {
+        grid-area: logo-text;
+
+        height: 3rem;
+       }
+
+    search-bar-container input {
+        grid-area: search-bar;
+
         width: 13ch;
+        flex-wrap: nowrap;
     }
 
-    hamburger-container {
-    align-self: start;
-    display: flex;
-        justify-content: center;
-        align-items: center;
-}
+
 
     hamburger-container img {
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 3rem;
+        width: 3rem;
         margin: 0;
         padding: 0;
     }
@@ -478,6 +505,7 @@ sidebar button img {
     }
 
     hamburger-container button {
+        /* position: fixed; */
         height: fit-content;
         width: fit-content;
         background: var(--sunny);
@@ -504,11 +532,6 @@ sidebar button img {
         background: var(--mauve);
 
     }
-
-
-    /* sidebar button img {
-        height: 1.5rem;
-    } */
 
     sidebar {
         display: none;

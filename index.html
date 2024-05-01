@@ -8,25 +8,26 @@
         <title>Odin Admin Dashboard</title>
     </head>
     <body>
-        <grid-container>
+        <grid-container>           
             <header>
+                <hamburger-container>
+                    <button >
+                        <img src="./assets/hamburger-menu2.svg" alt="">
+                    </button>
+                </hamburger-container>  
                 <logo-text-container>
                     <img src="./assets/cup-logo.svg" alt=""> 
                     <h1>myDashboard</h1>   
                 </logo-text-container>
                 <search-bar-container>
+
                 <form action="">
                 <input type="text" placeholder="Search..." name="search">
                 <button type="submit">Go!</button>
                 </form>    
-                </search-bar-container>
-                <hamburger-container>
-                    <button>
-                        <img src="./assets/hamburger-menu2.svg" alt="">
-                    </button>
-                </hamburger-container>
+                </search-bar-container>    
             </header>  
-            <sidebar>
+            <sidebar class="also-mobile-sidebar">
                 <button>
                     <img class="tool-tip" src="./assets/home.svg" alt="">
                     <p class="toggle-text">myHome</p>
