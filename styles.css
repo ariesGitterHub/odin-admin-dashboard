@@ -564,7 +564,7 @@ sidebar button img {
 
     .hidden-mobile-sidebar button, .hidden-mobile-sidebar button:hover, .hidden-mobile-sidebar button:active {
         border: none;
-        border-radius: none;
+        border-radius: 0;
     }
     
     .hidden-mobile-sidebar button img {
