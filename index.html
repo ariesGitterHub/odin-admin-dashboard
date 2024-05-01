@@ -8,33 +8,69 @@
         <title>Odin Admin Dashboard</title>
     </head>
     <body>
-        <grid-container>           
+        <grid-container>
+            <mobile-sidebar class="hidden-mobile-sidebar">
+                <button>
+                    <img src="./assets/home.svg" alt="">
+                    <p class="toggle-text">myHome</p>
+                </button>
+                <button>
+                    <img src="./assets/profile.svg" alt="">
+                    <p class="toggle-text">myProfile</p>
+                </button> 
+                <button>
+                    <img src="./assets/messages.svg" alt="">
+                    <p class="toggle-text">myMessages</p>
+                </button> 
+                <button>
+                    <img src="./assets/history.svg" alt="">
+                    <p class="toggle-text">myHistory</p>
+                </button> 
+                <button>
+                    <img src="./assets/tasks.svg" alt="">
+                    <p class="toggle-text">myTasks</p>
+                </button> 
+                <button>
+                    <img src="./assets/communities.svg" alt="">
+                    <p class="toggle-text">myCommunities</p>
+                </button> 
+                <br>
+                <button>
+                    <img src="./assets/settings.svg" alt="">
+                    <p class="toggle-text">Settings</p>
+                </button> 
+                <button>
+                    <img src="./assets/support.svg" alt="">
+                    <p class="toggle-text">Support</p>
+                </button> 
+                <button>
+                    <img src="./assets/privacy.svg" alt="">
+                    <p class="toggle-text">Privacy</p>
+                </button> 
+            </mobile-sidebar>           
             <header>
                 <hamburger-container>
-                    <button >
+                    <button id="hamburger-btn">
                         <img src="./assets/hamburger-menu2.svg" alt="">
                     </button>
                 </hamburger-container> 
                 <mobile-ready-helper-div>
-                <logo-text-container>
-                    <img src="./assets/cup-logo.svg" alt=""> 
-                    <h1>myDashboard</h1>   
-                </logo-text-container>
-                <search-bar-container>
+                    <logo-text-container>
+                        <img src="./assets/cup-logo.svg" alt=""> 
+                        <h1>myDashboard</h1>   
+                    </logo-text-container>
+                    <search-bar-container>
 
-                <form action="">
-                <input type="text" placeholder="Search..." name="search">
-                <button type="submit">Go!</button>
-                </form>    
-                </search-bar-container>    
-
-
-                </-mobile-ready-helper>
-
+                    <form action="">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit">Go!</button>
+                    </form>    
+                    </search-bar-container>    
+                </mobile-ready-helper-div>
             </header>  
-            <sidebar class="also-mobile-sidebar">
+            <sidebar>
                 <button>
-                    <img class="tool-tip" src="./assets/home.svg" alt="">
+                    <img src="./assets/home.svg" alt="">
                     <p class="toggle-text">myHome</p>
                 </button>
                 <button>
