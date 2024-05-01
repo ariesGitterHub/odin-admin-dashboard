@@ -478,11 +478,11 @@ sidebar button img {
     }
 
     hamburger-container button {
-        height: auto;
-        width: auto;
+        height: fit-content;
+        width: fit-content;
         background: var(--sunny);
         border: 1px double var(--sunny) ;
-        border-radius: 13px;
+        border-radius: 100px;
         color: var(--sunny);
         display: flex;
             justify-content: center;
@@ -495,13 +495,14 @@ sidebar button img {
     hamburger-container button:hover {
         background: var(--sunny);
         border: 1px double var(--sunny) ;
-        color: var(-sunny);
+        border-radius: 100px;
+        color: var(--sunny);
         outline: none;
     }
 
     hamburger-container button:active {
         background: var(--mauve);
-        border: 1px double var(--sunny);
+
     }
 
 
