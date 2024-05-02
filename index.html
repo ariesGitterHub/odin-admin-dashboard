@@ -11,107 +11,104 @@
         <grid-container>
             <mobile-sidebar class="hidden-mobile-sidebar">
                 <button>
-                    <img src="./assets/home.svg" alt="">
+                    <img src="./assets/home.svg" alt="myHome icon of a house">
                     <p class="toggle-text">myHome</p>
                 </button>
                 <button>
-                    <img src="./assets/profile.svg" alt="">
+                    <img src="./assets/profile.svg" alt="myProfile icon of an ID card">
                     <p class="toggle-text">myProfile</p>
                 </button> 
                 <button>
-                    <img src="./assets/messages.svg" alt="">
+                    <img src="./assets/messages.svg" alt="myMessages icon of a letter">
                     <p class="toggle-text">myMessages</p>
                 </button> 
                 <button>
-                    <img src="./assets/history.svg" alt="">
+                    <img src="./assets/history.svg" alt="myHistory icon of a clock with an arrow looping around it counter-clockwise">
                     <p class="toggle-text">myHistory</p>
                 </button> 
                 <button>
-                    <img src="./assets/tasks.svg" alt="">
+                    <img src="./assets/tasks.svg" alt="myTasks icon of a clipboard with checkboxes">
                     <p class="toggle-text">myTasks</p>
                 </button> 
                 <button>
-                    <img src="./assets/communities.svg" alt="">
+                    <img src="./assets/communities.svg" alt="myCommunities icon of a globe">
                     <p class="toggle-text">myCommunities</p>
                 </button> 
                 <button>
-                    <img src="./assets/settings.svg" alt="">
+                    <img src="./assets/settings.svg" alt="Setting icon of a gear">
                     <p class="toggle-text">Settings</p>
                 </button> 
                 <button>
-                    <img src="./assets/support.svg" alt="">
+                    <img src="./assets/support.svg" alt="Support icon of a heart surrounded by radiating lines">
                     <p class="toggle-text">Support</p>
                 </button> 
                 <button>
-                    <img src="./assets/privacy.svg" alt="">
+                    <img src="./assets/privacy.svg" alt="Privacy icon of a face showing only a brimmed hat and a pair of sunglasses">
                     <p class="toggle-text">Privacy</p>
                 </button> 
             </mobile-sidebar>           
             <header>
-                <hamburger-container>
+                <logo-text-container>
+                    <img src="./assets/cup-logo.svg" alt="Logo of a steaming coffee mug surrounded by a filled in circle"> 
+                    <h1>myDashboard</h1>   
+                </logo-text-container>
+                <search-bar-container>
+                <form action="">
                     <button id="hamburger-btn">
-                        <img src="./assets/hamburger-menu2.svg" alt="">
+                        <img src="./assets/hamburger-menu2.svg" alt="Three parallel lines used to access a sidebar menu">
                     </button>
-                </hamburger-container> 
-                <mobile-ready-helper-div>
-                    <logo-text-container>
-                        <img src="./assets/cup-logo.svg" alt=""> 
-                        <h1>myDashboard</h1>   
-                    </logo-text-container>
-                    <search-bar-container>
-
-                    <form action="">
                     <input type="text" placeholder="Search..." name="search">
-                    <button type="submit">Go!</button>
-                    </form>    
-                    </search-bar-container>    
-                </mobile-ready-helper-div>
+                    <button type="submit">Find it!</button>
+                </form>    
+                </search-bar-container>    
             </header>  
             <sidebar>
                 <button>
-                    <img src="./assets/home.svg" alt="">
+                    <img src="./assets/home.svg" alt="myHome icon of a house">
                     <p class="toggle-text">myHome</p>
                 </button>
                 <button>
-                    <img src="./assets/profile.svg" alt="">
+                    <img src="./assets/profile.svg" alt="myProfile icon of an ID card">
                     <p class="toggle-text">myProfile</p>
                 </button> 
                 <button>
-                    <img src="./assets/messages.svg" alt="">
+                    <img src="./assets/messages.svg" alt="myMessages icon of a letter">
                     <p class="toggle-text">myMessages</p>
                 </button> 
                 <button>
-                    <img src="./assets/history.svg" alt="">
+                    <img src="./assets/history.svg" alt="myHistory icon of a clock with an arrow looping around it counter-clockwise">
                     <p class="toggle-text">myHistory</p>
                 </button> 
                 <button>
-                    <img src="./assets/tasks.svg" alt="">
+                    <img src="./assets/tasks.svg" alt="myTasks icon of a clipboard with checkboxes">
                     <p class="toggle-text">myTasks</p>
                 </button> 
                 <button>
-                    <img src="./assets/communities.svg" alt="">
+                    <img src="./assets/communities.svg" alt="myCommunities icon of a globe">
                     <p class="toggle-text">myCommunities</p>
                 </button> 
                 <br>
+                <br>
+                <br>
                 <button>
-                    <img src="./assets/settings.svg" alt="">
+                    <img src="./assets/settings.svg" alt="Setting icon of a gear">
                     <p class="toggle-text">Settings</p>
                 </button> 
                 <button>
-                    <img src="./assets/support.svg" alt="">
+                    <img src="./assets/support.svg" alt="Support icon of a heart surrounded by radiating lines">
                     <p class="toggle-text">Support</p>
                 </button> 
                 <button>
-                    <img src="./assets/privacy.svg" alt="">
+                    <img src="./assets/privacy.svg" alt="Privacy icon of a face showing only a brimmed hat and a pair of sunglasses">
                     <p class="toggle-text">Privacy</p>
                 </button> 
             </sidebar>
             <main-content>
-                <non-project-card class="my-profile">
+                <card class="non-project my-profile">
                     <h2>Hello, </h2>
                     <hr>
                     <profile>
-                        <img src="./assets/mmm-Logo-2024-04-27.svg" alt="">
+                        <img src="./assets/mmm-Logo-2024-04-27.svg" alt="Mad Muffin Man profile logo">
                         <name>
                             <h3>Drew R.E. Lane</h3> 
                             <h3>(@madmuffinman)</h3>  
@@ -119,71 +116,83 @@
                     </profile>
                     <hr>
                     <br>
-                    <h2>Welcome back!
+                    <align-items-div>
+                        <img id="cutesy-face" src="./assets/square-smiley.svg" alt="Square shaped smiley face">
+                        <h2>Welcome back!</h2>
+                    </align-items-div>
                     <br>
-                    Please be sure to check your myAnnouncements.</h2>
-                </non-project-card>
-                <non-project-card>
+                    <h2>Please be sure to check your myAnnouncements.</h2>
+                </card>
+                <card class="non-project">
                     <h2>myAnnouncements</h2>
-                    <h3>Site Maintenance</h3> 
+                    <align-items-div>
+                        <img src="./assets/arrow.svg" alt="Arrow pointing right">                    
+                        <h3>Site Maintenance</h3>
+                    </align-items-div>                    
                     <em>Scheduled for 5/4/2024 @ 9PM.</em>
                     <hr>
-                    <h3>Privacy Policy Update</h3>
+                    <align-items-div>
+                        <img src="./assets/arrow.svg" alt="Arrow pointing right">                    
+                        <h3>Privacy Policy Update</h3>
+                    </align-items-div>   
                     <a href=""><em>Please read the new privacy conditions.</em></a>
                     <hr>
-                    <h3>New Features</h3>
+                    <align-items-div>
+                        <img src="./assets/arrow.svg" alt="Arrow pointing right">                    
+                        <h3>New Features</h3>
+                    </align-items-div>   
                     <a href=""><em>See whats's new!</em></a>
-                </non-project-card>
-                <non-project-card>
+                </card>
+                <card class="non-project">
                     <h2>Trending</h2>
                     <profile>
-                        <img src="./assets/profile3.svg" alt="">
+                        <img src="./assets/profile1.svg" alt="Profile image of a cute squid">
                         <name>
-                            <h3>@turtletart</h3>
-                            <p>Surf's Up App</p> 
+                            <h3>@squidoo2you</h3>
+                            <p>Bionic Brain Power</p> 
                         </name>
                     </profile>
                     <hr>
                     <profile>
-                        <img src="./assets/profile2.svg" alt="">
+                        <img src="./assets/profile2.svg" alt="Profile image of a cheeky monkey">
                         <name>
-                            <h3>@bananamana</h3>
+                            <h3>@bananamana185</h3>
                             <p>Monkey's Paw!!!!</p> 
                         </name>
                     </profile>
                     <hr>
                     <profile>
-                        <img src="./assets/profile1.svg" alt="">
+                        <img src="./assets/profile3.svg" alt="Profile image of a cute turtle">
                         <name>
-                            <h3>@squidoo</h3>
-                            <p>Bionic Brains</p> 
+                            <h3>@turtle-tart</h3>
+                            <p>Surf's Up App</p> 
                         </name>
                     </profile>
                     <hr>
                     <profile>
-                        <img src="./assets/profile4.svg" alt="">
+                        <img src="./assets/profile4.svg" alt="Profile image of a cute lion">
                         <name>
                             <h3>@mufasapasta</h3>
                             <p>Super Fun Party-time</p> 
                         </name>
                     </profile>
-                </non-project-card> 
-                <project-card class="special-card">
+                </card> 
+                <card class="project button-card">
                     <h2>myProjects</h2>
                     <button>
-                        <img src="./assets/new.svg" alt="">
+                        <img src="./assets/new.svg" alt="New project icon">
                         <p>New Project</p>
                     </button> 
                     <button>
-                        <img src="./assets/share.svg" alt="">
+                        <img src="./assets/share.svg" alt="Share project icon">
                         <p>Share Project</p>
                     </button> 
                     <button>
-                        <img src="./assets/delete.svg" alt="">
+                        <img src="./assets/delete.svg" alt="delete project icon">
                         <p>Delete Project</p>
                     </button> 
-                </project-card>
-                <project-card>
+                </card>
+                <card class="project">
                     <project-card-content>
                         <h3>
                             <a href="">"T.O.P. Admin Dashboard"</a>
@@ -194,12 +203,12 @@
                         </p>
                     </project-card-content>
                     <project-card-links>
-                        <a href=""><img src="./assets/like.svg" alt=""></a>
-                        <a href=""><img src="./assets/love.svg" alt=""></a>
-                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                        <a href=""><img src="./assets/like.svg" alt="Like icon"></a>
+                        <a href=""><img src="./assets/love.svg" alt="Love icon"></a>
+                        <a href=""><img src="./assets/link.svg" alt="Link icon"></a>
                     </project-card-links>
-                </project-card>
-                <project-card>
+                </card>
+                <card class="project">
                     <project-card-content>
                     <h3>
                         <a href="https://ariesgitterhub.github.io/odin-sign-up-form/">"T.O.P. Sign-Up Form"</a>
@@ -208,12 +217,12 @@
                     <p>Rather than make a boring sign-up form, I created an imaginary lecture sign-up form with way too many fun "Lovecraftian" horror story references. (Mobile ready.)</p>
                     </project-card-content>
                     <project-card-links>
-                        <a href=""><img src="./assets/like.svg" alt=""></a>
-                        <a href=""><img src="./assets/love.svg" alt=""></a>
-                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                        <a href=""><img src="./assets/like.svg" alt="Like icon"></a>
+                        <a href=""><img src="./assets/love.svg" alt="Love icon"></a>
+                        <a href=""><img src="./assets/link.svg" alt="Link icon"></a>
                     </project-card-links>
-                </project-card>
-                <project-card>
+                </card>
+                <card class="project">
                     <project-card-content>
                         <h3>
                             <a href="https://ariesgitterhub.github.io/odin-calculator/">"T.O.P. Calculator"</a>
@@ -222,12 +231,12 @@
                         <p>This project hews closer to the basic project parameters of a calculator. However, I had to add extra fun buttons, like a Roman numeral converter, and a "The Meaning of Life" button. (Mobile ready.)</p>
                     </project-card-content>
                     <project-card-links>
-                        <a href=""><img src="./assets/like.svg" alt=""></a>
-                        <a href=""><img src="./assets/love.svg" alt=""></a>
-                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                        <a href=""><img src="./assets/like.svg" alt="Like icon"></a>
+                        <a href=""><img src="./assets/love.svg" alt="Love icon"></a>
+                        <a href=""><img src="./assets/link.svg" alt="Link icon"></a>
                     </project-card-links>
-                </project-card>
-                <project-card>
+                </card>
+                <card class="project">
                     <project-card-content>
                         <h3>
                             <a href="https://ariesgitterhub.github.io/odin-etch-a-sketch/">"T.O.P. Etch-a-Sketch"</a>
@@ -236,12 +245,12 @@
                         <p>This project started off following the project brief of creating an etch-a-sketch, but it quickly morphed in a bigger project as I became obsessed with making a TTRPG dungeon-maker that also happened to be an etch-a-sketch. (Not mobile ready.)</p>
                     </project-card-content>
                     <project-card-links>
-                        <a href=""><img src="./assets/like.svg" alt=""></a>
-                        <a href=""><img src="./assets/love.svg" alt=""></a>
-                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                        <a href=""><img src="./assets/like.svg" alt="Like icon"></a>
+                        <a href=""><img src="./assets/love.svg" alt="Love icon"></a>
+                        <a href=""><img src="./assets/link.svg" alt="Link icon"></a>
                     </project-card-links>
-                </project-card>
-                <project-card>
+                </card>
+                <card class="project">
                     <project-card-content>
                         <h3>
                             <a href="https://ariesgitterhub.github.io/odin-rock-paper-scissors/">"T.O.P. Rock-Paper-Scissors"</a>
@@ -250,12 +259,12 @@
                         <p>This was one of my favorite T.O.P. projects. Rather than make a "rock-paper-scissors" type game like everyone else, players in my game choose one of the mystical elements of Wood, Fire, Water, Earth, and Metal. (Not mobile ready.)</p>
                     </project-card-content>
                     <project-card-links>
-                        <a href=""><img src="./assets/like.svg" alt=""></a>
-                        <a href=""><img src="./assets/love.svg" alt=""></a>
-                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                        <a href=""><img src="./assets/like.svg" alt="Like icon"></a>
+                        <a href=""><img src="./assets/love.svg" alt="Love icon"></a>
+                        <a href=""><img src="./assets/link.svg" alt="Link icon"></a>
                     </project-card-links>
-                </project-card>
-                <project-card>
+                </card>
+                <card class="project">
                     <project-card-content>
                     <h3>
                         <a href="https://ariesgitterhub.github.io/odin-landing-page/">"T.O.P. Landing Page"</a>
@@ -264,12 +273,12 @@
                     <p>A pretty straight forward landing page, but one that I felt needed a silly angle with which to amuse myself. Click the link to see what I am talking about. (Not mobile ready.)</p>
                     </project-card-content>
                     <project-card-links>
-                        <a href=""><img src="./assets/like.svg" alt=""></a>
-                        <a href=""><img src="./assets/love.svg" alt=""></a>
-                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                        <a href=""><img src="./assets/like.svg" alt="Like icon"></a>
+                        <a href=""><img src="./assets/love.svg" alt="Love icon"></a>
+                        <a href=""><img src="./assets/link.svg" alt="Link icon"></a>
                     </project-card-links>
-                </project-card>
-                <project-card>
+                </card>
+                <card class="project">
                     <project-card-content>
                         <h3>
                             <a href="https://ariesgitterhub.github.io/odin-recipe/">"T.O.P. Recipe Page"</a>
@@ -278,12 +287,12 @@
                         <p>An early Odin Project HTML challenge. It's pretty basic stuff. Set an alarm in case you fall asleep. (Not mobile ready.)</p>
                     </project-card-content>
                     <project-card-links>
-                        <a href=""><img src="./assets/like.svg" alt=""></a>
-                        <a href=""><img src="./assets/love.svg" alt=""></a>
-                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                        <a href=""><img src="./assets/like.svg" alt="Like icon"></a>
+                        <a href=""><img src="./assets/love.svg" alt="Love icon"></a>
+                        <a href=""><img src="./assets/link.svg" alt="Link icon"></a>
                     </project-card-links>
-                </project-card>
-                <project-card>
+                </card>
+                <card class="project">
                     <project-card-content>
                         <h3>
                             <a href="https://fcc-clock-test-2023-ew708.netlify.app/">"F.C.C. Pomodoro Clock"</a>
@@ -292,12 +301,12 @@
                         <p>This was a fun coding challenge that I wrote last year for Free Code Camp (F.C.C.). It's also useful for time management. This is definitely code that I need to revisit and tinker around with, as it functions a wee bit differently depending on the  browser. Once again, the Linux Chrome browser won't display this project's emoji images or end alarm sound properly. (Mobile ready.)</p>
                     </project-card-content>
                     <project-card-links>
-                        <a href=""><img src="./assets/like.svg" alt=""></a>
-                        <a href=""><img src="./assets/love.svg" alt=""></a>
-                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                        <a href=""><img src="./assets/like.svg" alt="Like icon"></a>
+                        <a href=""><img src="./assets/love.svg" alt="Love icon"></a>
+                        <a href=""><img src="./assets/link.svg" alt="Link icon"></a>
                     </project-card-links>
-                </project-card>
-                <project-card>
+                </card>
+                <card class="project">
                     <project-card-content>
                         <h3>
                             <a href="https://scintillating-muffin-134894.netlify.app/">"Stupid Sound Machine"</a>
@@ -306,12 +315,12 @@
                         <p>One of my favorite older apps that has some humorous "local pub conversation utility." Sadly, this app definitely breaks if using a Linux Chrome browser. (Mobile ready.)</p>
                     </project-card-content>
                     <project-card-links>
-                        <a href=""><img src="./assets/like.svg" alt=""></a>
-                        <a href=""><img src="./assets/love.svg" alt=""></a>
-                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                        <a href=""><img src="./assets/like.svg" alt="Like icon"></a>
+                        <a href=""><img src="./assets/love.svg" alt="Love icon"></a>
+                        <a href=""><img src="./assets/link.svg" alt="Link icon"></a>
                     </project-card-links>
-                </project-card>
-                <project-card>
+                </card>
+                <card class="project">
                     <project-card-content>
                         <h3>
                             <a href="https://whimsical-banoffee-187bf5.netlify.app/">"Star-Sign Quote Generator"</a>
@@ -320,11 +329,11 @@
                         <p>My first real app from last year that was created using React. Please note that this app works best in most browsers, desktop or mobile, but using a Linux Chrome browser will cause some images to fail. (Mobile ready.)</p>
                     </project-card-content>                 
                     <project-card-links>
-                        <a href=""><img src="./assets/like.svg" alt=""></a>
-                        <a href=""><img src="./assets/love.svg" alt=""></a>
-                        <a href=""><img src="./assets/link.svg" alt=""></a>
+                        <a href=""><img src="./assets/like.svg" alt="Like icon"></a>
+                        <a href=""><img src="./assets/love.svg" alt="Love icon"></a>
+                        <a href=""><img src="./assets/link.svg" alt="Link icon"></a>
                     </project-card-links>
-                </project-card>
+                </card>
             </main-content>
             <footer>
                 <p>Mad Muffin Man Design Studio, Copyright 2024</p>
