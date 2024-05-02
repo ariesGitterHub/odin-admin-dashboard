@@ -21,7 +21,7 @@ function showSidebarMenu() {
 function hideSidebarMenu() {
     console.log("Test2!!!!");
     hiddenMobileSidebar.style.display = "none";
-    headerSection.style.display = "grid";
+    headerSection.style.display = "flex";
     mainContent.style.display = "grid";
     footerSection.style.display = "flex";
 }
