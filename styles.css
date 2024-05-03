@@ -50,7 +50,7 @@ body {
 }
 
 h1 {
-    font-size: 2.85rem;
+    font-size: 3.325rem;
 }
 
 h2 {
@@ -172,7 +172,7 @@ search-bar-container form {
 }
 
 search-bar-container input {
-    width: 20.78ch;
+    width: 24.75ch;
     background: var(--base-white);
     border: var(--base-border) double var(--bg-blue) ;
     border-radius: var(--base-radius);
