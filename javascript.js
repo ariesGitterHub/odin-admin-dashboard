@@ -12,7 +12,7 @@ mobileSidebar.addEventListener("click", hideSidebarMenu);
 
 function showSidebarMenu() {
     console.log("Test!!!!");
-    hiddenMobileSidebar.style.display = "grid";
+    // hiddenMobileSidebar.style.display = "grid";
     headerSection.style.display = "none";
     mainContent.style.display = "none";
     footerSection.style.display = "none";

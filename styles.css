@@ -47,7 +47,7 @@
 }
 
 body {
-      background-image: linear-gradient(to right, var(--bg-blue), var(--bg-blue2));
+    background-image: linear-gradient(to right, var(--bg-blue), var(--bg-blue2));
 }
 
 h1 {
@@ -532,20 +532,20 @@ footer p {
     }
 
     .hidden-mobile-sidebar {
-        position: sticky;
+        position: fixed;
         height: 100vh;
         width: 100vw;
         background: var(--smoke);
-        display: none;
-
-
+        display: grid;
+        z-index: 2;
     }
 
-    /* .hidden-mobile-sidebar button {
+    
+    .hidden-mobile-sidebar button {
         width: auto;
         display: flex;
         justify-content: start;
-        padding-left: calc(var(--base-padding) * 2);
+        padding-left: 1.25rem;
     }
 
     .hidden-mobile-sidebar button, .hidden-mobile-sidebar button:hover, .hidden-mobile-sidebar button:active {
@@ -553,16 +553,16 @@ footer p {
         border-radius: 0;
     }
     
-    .hidden-mobile-sidebar button img {
-        padding: calc(var(--base-padding) * 1);
-    }
+    /* .hidden-mobile-sidebar button img {
+        padding: .5rem;
+    } */
 
     .hidden-mobile-sidebar button:nth-child(even) {
         background: var(--smoke2);
     }
 
     .hidden-mobile-sidebar button:hover:nth-child(even) {
-        background: var(--bg-blue);
+        background-image: linear-gradient(to right, var(--bg-blue), var(--bg-blue2));
     }
 
     .hidden-mobile-sidebar button:active:nth-child(even) {
@@ -570,7 +570,7 @@ footer p {
     }
 
     .hidden-mobile-sidebar button img {
-        height: 2.75rem;
+        height: 3rem;
         padding: 0;
     }
 
@@ -578,8 +578,7 @@ footer p {
         display: grid;
         font-size: 1.25rem;
         padding-left:1rem;
-    } */
-
+    }
 }
 
 
@@ -591,7 +590,7 @@ footer p {
     }
 
     h2 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     h3 {
@@ -602,13 +601,19 @@ footer p {
         font-size: 1.1rem;
     }
 
-
+    header {
+        /* justify-content: center; */
+    }
     logo-text-container img {
         height: 3rem;
     }
 
+    search-bar-container {
+        /* justify-content: space-evenly; */
+    }
+
     search-bar-container form {
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
         gap: 1.2rem;
     }
 
@@ -628,6 +633,7 @@ footer p {
 
     search-bar-container button {
         height: 2rem;
+        width: 4.4rem;
         font-size: .9rem;
     }
 
