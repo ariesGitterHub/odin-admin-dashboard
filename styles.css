@@ -109,6 +109,7 @@ button {
     cursor: pointer;
     display: flex;
         align-items: center;
+        justify-content: center;
     padding: .75rem;
 }
 
@@ -607,8 +608,8 @@ footer p {
 
     search-bar-container button {
         height: 2rem;
-        width: 4.5rem;
-        font-size: .9rem;
+        width: 4.4rem;
+        font-size: .85rem;
         margin-left: .25rem;
     }
 
