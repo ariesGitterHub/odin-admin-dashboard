@@ -116,6 +116,7 @@ button {
 button:hover {
     background-image: linear-gradient(to right, var(--bg-blue), var(--bg-blue2));
     border-radius: var(--base-radius);
+    border-bottom: .25rem solid var(--bg-blue);
 }
 
 button img{
@@ -161,7 +162,7 @@ logo-text-container h1 {
 
 search-bar-container {
     display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: center;
     margin-left: -3px;
 }
@@ -231,7 +232,7 @@ search-bar-container button:active {
     text-align: center;
 }
 
-#hamburger-btn {
+.hamburger-btn {
     display: none;
 }
 
@@ -397,7 +398,7 @@ footer p {
 
 /* MEDIA QUERIES                         */
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 750px) {
 
     .toggle-text {
         display: none;
@@ -405,14 +406,14 @@ footer p {
 
     header {
         display: flex;
-        align-items: center;
-        justify-content: center;
+            align-items: center;
+            justify-content: center;
     }
 
     sidebar button {
         width: fit-content;
         display: flex;
-        justify-content: center;
+            justify-content: center;
     }
 
     sidebar button img {
@@ -426,7 +427,7 @@ footer p {
 
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
 
     h1 {
         font-size: 2.3rem;
@@ -473,11 +474,11 @@ footer p {
     }
 
     search-bar-container form {
-        justify-content: space-evenly;
-        /* gap: 1rem; */
+        justify-content: center;
+        gap: 0;
     }
 
-    #hamburger-btn {
+    .hamburger-btn {
         height: 2.25rem;
         width: 2.25rem;
         background: var(--base-white);
@@ -486,31 +487,33 @@ footer p {
         display: flex;
             align-items: center;
             justify-content: center;
+        margin-right: 1.25rem;       
         outline: none;
     }
 
-    #hamburger-btn img {
+    .hamburger-btn img {
         height: 2.25rem;
         margin: 0;
         padding: 0;
     }
 
-   #hamburger-btn:hover {
+   .hamburger-btn:hover {
         background: var(--sunny);
     }
 
-   #hamburger-btn:active {
+   .hamburger-btn:active {
         background: var(--mauve);
     }
 
     search-bar-container input {
-        width: 20ch;
+        width: 18ch;
         font-size: .95rem;
     }
 
     search-bar-container button {
         height: 2.2rem;
         font-size: .95rem;
+        margin-left: .5rem;
     }
 
     sidebar {
@@ -536,42 +539,33 @@ footer p {
         height: 100vh;
         width: 100vw;
         background: var(--smoke);
-        display: grid;
-        z-index: 2;
+        display: none;
+        gap: 2px;
     }
 
-    
     .hidden-mobile-sidebar button {
+        height: 3.75rem;
         width: auto;
-        display: flex;
-        justify-content: start;
-        padding-left: 1.25rem;
-    }
-
-    .hidden-mobile-sidebar button, .hidden-mobile-sidebar button:hover, .hidden-mobile-sidebar button:active {
-        border: none;
-        border-radius: 0;
-    }
-    
-    /* .hidden-mobile-sidebar button img {
-        padding: .5rem;
-    } */
-
-    .hidden-mobile-sidebar button:nth-child(even) {
         background: var(--smoke2);
+        border-radius: var(--base-radius);
+        display: flex;
+            justify-content: start;
+        margin: .5rem;
+        padding: .5rem .75rem .5rem .75rem;
     }
 
-    .hidden-mobile-sidebar button:hover:nth-child(even) {
+    .hidden-mobile-sidebar button:hover {
         background-image: linear-gradient(to right, var(--bg-blue), var(--bg-blue2));
+        border-bottom: .25rem solid var(--bg-blue);
     }
 
-    .hidden-mobile-sidebar button:active:nth-child(even) {
+    .hidden-mobile-sidebar button:active {
         background: var(--mauve);
-    }
+    } 
 
     .hidden-mobile-sidebar button img {
-        height: 3rem;
-        padding: 0;
+        height: 2.5rem;
+        padding-left: .5rem;
     }
 
     .toggle-text {
@@ -584,9 +578,8 @@ footer p {
 
 @media only screen and (max-width: 440px) {
 
-
     h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     h2 {
@@ -601,28 +594,16 @@ footer p {
         font-size: 1.1rem;
     }
 
-    header {
-        /* justify-content: center; */
-    }
     logo-text-container img {
-        height: 3rem;
+        height: 2.75rem;
     }
 
-    search-bar-container {
-        /* justify-content: space-evenly; */
-    }
-
-    search-bar-container form {
-        /* justify-content: space-evenly; */
-        gap: 1.2rem;
-    }
-
-    #hamburger-btn {
+    .hamburger-btn {
         height: 2rem;
         width: 2rem;
     }
 
-    #hamburger-btn img {
+    .hamburger-btn img {
         height: 2rem;
     }
 
@@ -633,8 +614,9 @@ footer p {
 
     search-bar-container button {
         height: 2rem;
-        width: 4.4rem;
+        width: 4.5rem;
         font-size: .9rem;
+        margin-left: .25rem;
     }
 
     .my-profile img {
