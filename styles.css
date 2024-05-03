@@ -50,7 +50,7 @@ body {
 }
 
 h1 {
-    font-size: 3.325rem;
+    font-size: 3rem;
 }
 
 h2 {
@@ -109,7 +109,7 @@ button {
     cursor: pointer;
     display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
     padding: .75rem;
 }
 
@@ -165,10 +165,10 @@ search-bar-container {
     margin-left: -3px;
 }
 
-search-bar-container form {
+form {
     display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 1.5rem;
 }
 
@@ -421,10 +421,10 @@ footer p {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 525px) {
 
     h1 {
-        font-size: 2.3rem;
+        font-size: 2.25rem;
     }
 
     h2 {
@@ -456,20 +456,21 @@ footer p {
 
     header {
         position: fixed;
+        left: -17px;
         width: 100vw;
         background-image: linear-gradient(to right, var(--bg-blue), var(--bg-blue2));
         border-bottom: 1.5rem solid var(--base-black);
-        margin: 0;
-        padding: .75rem 0 .75rem 0;
+        display: flex;
+            justify-content: space-evenly;
+        padding: .75rem;
     }
 
     logo-text-container img {
         height: 3.5rem;
     }
 
-    search-bar-container form {
-        justify-content: center;
-        gap: 0;
+    form {
+        justify-content: space-evenly;
     }
 
     .hamburger-btn {
@@ -481,7 +482,7 @@ footer p {
         display: flex;
             align-items: center;
             justify-content: center;
-        margin-right: 1.25rem;       
+        margin-right: auto;       
         outline: none;
     }
 
@@ -509,7 +510,7 @@ footer p {
         display: flex;
         justify-content: center;
         font-size: .95rem;
-        margin-left: .5rem;
+        margin-left: auto;
     }
 
     sidebar {
@@ -545,6 +546,7 @@ footer p {
         background: var(--smoke2);
         border-radius: var(--base-radius);
         display: flex;
+            align-items: center;
             justify-content: start;
         margin: .5rem;
         padding: .5rem .75rem .5rem .75rem;
@@ -575,7 +577,7 @@ footer p {
 @media only screen and (max-width: 440px) {
 
     h1 {
-        font-size: 1.75rem;
+        font-size: 1.65rem;
     }
 
     h2 {
@@ -604,15 +606,14 @@ footer p {
     }
 
     search-bar-container input {
-        width: 13ch;
+        width: 12ch;
         font-size: .9rem;
     }
 
     search-bar-container button {
         height: 2rem;
-
         font-size: .9rem;
-        margin-left: .25rem;
+        /* margin-left: .25rem; */
     }
 
     .my-profile img {
