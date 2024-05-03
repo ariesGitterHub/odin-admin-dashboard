@@ -506,6 +506,8 @@ footer p {
 
     search-bar-container button {
         height: 2.2rem;
+        display: flex;
+        justify-content: center;
         font-size: .95rem;
         margin-left: .5rem;
     }
@@ -608,8 +610,8 @@ footer p {
 
     search-bar-container button {
         height: 2rem;
-        width: 4.4rem;
-        font-size: .85rem;
+
+        font-size: .9rem;
         margin-left: .25rem;
     }
 
