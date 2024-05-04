@@ -98,6 +98,14 @@ mobile-sidebar {
     display: none;
 }
 
+.hamburger-btn {
+    display: none;
+}
+
+hamburger-container {
+    width: auto;
+}
+
 
 /* GLOBAL BUTTONS                        */
 
@@ -121,14 +129,14 @@ button:hover {
 
 button img{
     height: 3.5rem;
-    padding-right: 1rem;
+    padding-right: .5rem;
 }
 
 button:active {
     background: var(--mauve);
 }
 
-
+/* CHANGES? */
 /* HEADER                                */
 
 header {
@@ -228,10 +236,6 @@ search-bar-container button:active {
     color: var(--sunny);
     outline: none;
     text-align: center;
-}
-
-.hamburger-btn {
-    display: none;
 }
 
 
@@ -424,7 +428,7 @@ footer p {
 @media only screen and (max-width: 525px) {
 
     h1 {
-        font-size: 2.25rem;
+        font-size: 2.16rem;
     }
 
     h2 {
@@ -459,7 +463,7 @@ footer p {
         left: -17px;
         width: 100vw;
         background-image: linear-gradient(to right, var(--bg-blue), var(--bg-blue2));
-        border-bottom: 1.5rem solid var(--base-black);
+        border-bottom: 3rem solid var(--base-black);
         display: flex;
             justify-content: space-evenly;
         padding: .75rem;
@@ -473,6 +477,14 @@ footer p {
         justify-content: space-evenly;
     }
 
+    hamburger-container {
+        position: fixed;
+        top: 136px;
+        left: 11px;
+        display: block;
+        height: 2rem;
+    }
+
     .hamburger-btn {
         height: 2.25rem;
         width: 2.25rem;
@@ -482,7 +494,7 @@ footer p {
         display: flex;
             align-items: center;
             justify-content: center;
-        margin-right: auto;       
+        /* margin-right: auto;        */
         outline: none;
     }
 
@@ -494,23 +506,25 @@ footer p {
 
    .hamburger-btn:hover {
         background: var(--sunny);
+        border: none;
     }
 
    .hamburger-btn:active {
         background: var(--mauve);
+        border: none;
     }
 
     search-bar-container input {
-        width: 18ch;
-        font-size: .95rem;
+        width: 20ch;
+        font-size: 1rem;
     }
 
     search-bar-container button {
         height: 2.2rem;
         display: flex;
         justify-content: center;
-        font-size: .95rem;
-        margin-left: auto;
+        font-size: 1rem;
+  
     }
 
     sidebar {
@@ -577,7 +591,7 @@ footer p {
 @media only screen and (max-width: 440px) {
 
     h1 {
-        font-size: 1.65rem;
+        font-size: 1.77rem;
     }
 
     h2 {
@@ -596,6 +610,13 @@ footer p {
         height: 2.75rem;
     }
 
+    hamburger-container {
+        position: fixed;
+        top: 125.5px;
+        left: 11px;
+        height: 2rem;
+    }
+
     .hamburger-btn {
         height: 2rem;
         width: 2rem;
@@ -606,13 +627,13 @@ footer p {
     }
 
     search-bar-container input {
-        width: 12ch;
-        font-size: .9rem;
+        width: 14.5ch;
+        /* font-size: .9rem; */
     }
 
     search-bar-container button {
         height: 2rem;
-        font-size: .9rem;
+        /* font-size: .9rem; */
     }
 
     .my-profile img {

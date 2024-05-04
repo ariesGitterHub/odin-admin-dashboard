@@ -7,6 +7,8 @@
         <script src="javascript.js" defer=""></script>
         <title>Odin Admin Dashboard</title>
     </head>
+
+    <!-- CHANGES???? -->
     <body>
         <grid-container>
             <mobile-sidebar class="hidden-mobile-sidebar">
@@ -48,7 +50,8 @@
                     <p>Privacy</p>
                 </button> 
                 <br>
-            </mobile-sidebar>           
+            </mobile-sidebar>   
+                    
             <header>
                 <logo-text-container>
                     <img src="./assets/cup-logo.svg" alt="Logo of a steaming coffee mug surrounded by a filled in circle"> 
@@ -56,14 +59,19 @@
                 </logo-text-container>
                 <search-bar-container>
                 <form action="">
-                    <button class="hamburger-btn">
+                    <!-- <button class="hamburger-btn">
                         <img src="./assets/hamburger-menu2.svg" alt="Three parallel lines used to access a sidebar menu">
-                    </button>
+                    </button> -->
                     <input type="text" placeholder="Search..." name="search">
                     <button type="submit">Go!</button>
                 </form>    
                 </search-bar-container>    
             </header>  
+            <hamburger-container>
+                <button class="hamburger-btn">
+                    <img src="./assets/hamburger-menu2.svg" alt="Three parallel lines used to access a sidebar menu">
+                </button>
+            </hamburger-container>
             <sidebar>
                 <button>
                     <img src="./assets/home.svg" alt="myHome icon of a house">
