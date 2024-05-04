@@ -5,10 +5,12 @@ const footerSection = document.querySelector("footer");
 
 const hiddenMobileSidebar = document.querySelector(".hidden-mobile-sidebar");
 
-const mobileSidebarBtn = document.querySelector(".mobile-sidebar-btn");
+const mobileSidebarBtn = document.querySelectorAll(".mobile-sidebar-btn");
 
 hamburgerBtn.addEventListener("click", showSidebarMenu);
-mobileSidebarBtn.addEventListener("click", hideSidebarMenu);
+mobileSidebarBtn.forEach(button => {
+button.addEventListener("click", hideSidebarMenu);
+})
 
 
 function showSidebarMenu(event) {
