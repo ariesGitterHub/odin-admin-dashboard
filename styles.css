@@ -50,7 +50,7 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 h2 {
@@ -102,7 +102,7 @@ mobile-sidebar {
 /* GLOBAL BUTTONS                        */
 
 button {
-    width: 18rem;
+    width: 16rem;
     background: var(--smoke);
     border: none;
     color: var(--sunny);
@@ -173,7 +173,7 @@ form {
 }
 
 search-bar-container input {
-    width: 24.75ch;
+    width: 22.15ch;
     background: var(--base-white);
     border: var(--base-border) double var(--bg-blue) ;
     border-radius: var(--base-radius);
@@ -446,7 +446,7 @@ footer p {
     grid-container {
         display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: .1fr 2fr 1fr;
+            grid-template-rows: .1fr 4fr 1fr;
             grid-template-areas: 
             "header"
             "main-content"
