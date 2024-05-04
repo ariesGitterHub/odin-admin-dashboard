@@ -50,7 +50,7 @@ body {
 }
 
 h1 {
-    font-size: 2.7rem;
+    font-size: 3rem;
 }
 
 h2 {
@@ -110,7 +110,7 @@ hamburger-container {
 /* GLOBAL BUTTONS                        */
 
 button {
-    width: 16rem;
+    width: 18rem;
     background: var(--smoke);
     border: none;
     color: var(--sunny);
@@ -136,7 +136,7 @@ button:active {
     background: var(--mauve);
 }
 
-/* CHANGES? */
+
 /* HEADER                                */
 
 header {
@@ -147,7 +147,6 @@ header {
         align-items: start;
         justify-content: center;
         gap: .6rem;   
-    /* margin: -10px 0 0 -10px; */
     padding: 1.5rem 0 0 1.5rem;
 }
 
@@ -181,7 +180,7 @@ form {
 }
 
 search-bar-container input {
-    width: 22.15ch;
+    width: 24.575ch;
     background: var(--base-white);
     border: var(--base-border) double var(--bg-blue) ;
     border-radius: var(--base-radius);
@@ -273,7 +272,7 @@ card {
 
 .non-project {
     background: var(--sunset);
-    border: var(--base-border) dashed var(--dusk);
+    border: var(--base-border) double var(--dusk);
     color: var(--bg-blue);
     display: grid;
 }
@@ -303,6 +302,7 @@ align-items-div img {
     color: var(--sunny);    
     display: flex;
         flex-direction: column;
+    margin-top: 1rem;
 }
 
 .my-profile h2 {
@@ -419,6 +419,10 @@ footer p {
         padding: 0;
     }
 
+    .my-profile {
+        margin-top: 2rem;
+}
+
     .my-profile img {
         height: 4.5rem;
     }
@@ -486,26 +490,25 @@ footer p {
     }
 
     .hamburger-btn {
-        height: 2.25rem;
-        width: 2.25rem;
-        background: var(--base-white);
+        height: 2.2rem;
+        width: 2.2rem;
+        background: var(--base-black);
         border: none;
         border-radius: var(--base-radius);
         display: flex;
             align-items: center;
             justify-content: center;
-        /* margin-right: auto;        */
         outline: none;
     }
 
     .hamburger-btn img {
-        height: 2.25rem;
+        height: 2rem;
         margin: 0;
         padding: 0;
     }
 
    .hamburger-btn:hover {
-        background: var(--sunny);
+        background: var(--dusk);
         border: none;
     }
 
@@ -524,7 +527,6 @@ footer p {
         display: flex;
         justify-content: center;
         font-size: 1rem;
-  
     }
 
     sidebar {
@@ -628,12 +630,10 @@ footer p {
 
     search-bar-container input {
         width: 14.5ch;
-        /* font-size: .9rem; */
     }
 
     search-bar-container button {
         height: 2rem;
-        /* font-size: .9rem; */
     }
 
     .my-profile img {
