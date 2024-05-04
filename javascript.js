@@ -8,9 +8,9 @@ const hiddenMobileSidebar = document.querySelector(".hidden-mobile-sidebar");
 const mobileSidebarBtn = document.querySelectorAll(".mobile-sidebar-btn");
 
 hamburgerBtn.addEventListener("click", showSidebarMenu);
-mobileSidebarBtn.forEach(button => {
+mobileSidebarBtn.forEach(function(button) {
 button.addEventListener("click", hideSidebarMenu);
-})
+});
 
 
 function showSidebarMenu(event) {
