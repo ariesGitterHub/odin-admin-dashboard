@@ -84,6 +84,7 @@ hr {
 }
 
 grid-container {
+    height: 100vh;
     display: grid;
         grid-template-columns: .1fr 4fr;
         grid-template-rows: .1fr 2fr 1fr;
@@ -302,7 +303,6 @@ align-items-div img {
     color: var(--sunny);    
     display: flex;
         flex-direction: column;
-    margin-top: 1rem;
 }
 
 .my-profile h2 {
@@ -420,7 +420,6 @@ footer p {
     }
 
     .my-profile {
-        margin-top: 2rem;
 }
 
     .my-profile img {
@@ -452,14 +451,15 @@ footer p {
     }
 
     grid-container {
+        /* height: 100vh; */
         display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: .1fr 4fr 1fr;
+            grid-template-rows: 1fr 4fr 1fr;
             grid-template-areas: 
             "header"
             "main-content"
             "footer";
-             place-content: center;
+             /* place-content: center; */
     }
 
     header {
@@ -481,7 +481,19 @@ footer p {
         justify-content: space-evenly;
     }
 
-    hamburger-container {
+    search-bar-container input {
+        width: 20ch;
+        font-size: 1rem;
+    }
+
+    search-bar-container button {
+        height: 2.2rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+        hamburger-container {
         position: fixed;
         top: 136px;
         left: 11px;
@@ -517,18 +529,6 @@ footer p {
         border: none;
     }
 
-    search-bar-container input {
-        width: 20ch;
-        font-size: 1rem;
-    }
-
-    search-bar-container button {
-        height: 2.2rem;
-        display: flex;
-        justify-content: center;
-        font-size: 1rem;
-    }
-
     sidebar {
         display: none;
     }
@@ -540,6 +540,7 @@ footer p {
     main-content {
         border-radius: 0;
         margin-right: 0;
+        margin-top: 7rem;
         opacity: 1;
     }
 
