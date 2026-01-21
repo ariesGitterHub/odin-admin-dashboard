@@ -51,3 +51,6 @@ ATTRIBUTIONS
 [Animal Outlined Sepia Icons Collection](https://www.svgrepo.com/collection/animal-outlined-sepia-icons/) were used for trending profile icons.
 
 "@madmuffinman" logo was created for this project, copyright 2024.
+
+REMINDER!
+I have done so much since I started doing these projects. Just remember that this project is bare bones. To update this to gitHub, use "git add .", "git commit", "git push origin man". as per usual, that is it! Nothing else is needed (unlike all the new stuff I do now).
